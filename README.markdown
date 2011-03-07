@@ -95,8 +95,8 @@ use HTML itself. There's no need to preface it or delimit it to
 indicate that you're switching from Markdown to HTML; you just use
 the tags.
 
-不在 Markdown 涵蓋範圍之外的標籤，都可以直接在文件裡面用 HTML 撰寫。不需要額外標註這是 HTML 或是 Markdown；只要直接加標籤就可
-以了。
+不在 Markdown 涵蓋範圍之外的標籤，都可以直接在文件裡面用 HTML 撰寫。
+不需要額外標註這是 HTML 或是 Markdown；只要直接加標籤就可以了。
 
 The only restrictions are that block-level HTML elements -- e.g. `<div>`,
 `<table>`, `<pre>`, `<p>`, etc. -- must be separated from surrounding
@@ -104,14 +104,18 @@ content by blank lines, and the start and end tags of the block should
 not be indented with tabs or spaces. Markdown is smart enough not
 to add extra (unwanted) `<p>` tags around HTML block-level tags.
 
-只有區塊元素──比如 `<div>`,`<table>`, `<pre>`, `<p>` 等標籤，必需在前後加上空白，以利與內容區隔。而且這些的開始與結尾標籤，不可以用 tab 或是空白來縮排。Markdown 的產生器有智慧型判斷，可以避免在區塊標籤前後加上沒有必要的 `<p>` 標籤。
-
+只有區塊元素──比如 `<div>`,`<table>`, `<pre>`, `<p>` 等標籤，必需在
+前後加上空白，以利與內容區隔。而且這些的開始與結尾標籤，不可以用 tab 
+或是空白來縮排。Markdown 的產生器有智慧型判斷，可以避免在區塊標籤前後
+加上沒有必要的 `<p>` 標籤。
 
 For example, to add an HTML table to a Markdown article:
+
 舉例說明，在 Markdown 文件裡加上一段 HTML 表格：
 
     This is a regular paragraph.
     這是一般的段落
+
     <table>
         <tr>
             <td>Foo</td>
@@ -124,7 +128,9 @@ For example, to add an HTML table to a Markdown article:
 Note that Markdown formatting syntax is not processed within block-level
 HTML tags. E.g., you can't use Markdown-style `*emphasis*` inside an
 HTML block.
-請注意，在 HTML 區塊標籤內，是不會對 Markdown 的語法進行處理的。例如， HTML 區塊內，無法使用 Markdown 形式的 `*強調`
+
+請注意，在 HTML 區塊標籤內，是不會對 Markdown 的語法進行處理的。例如，
+HTML 區塊內，無法使用 Markdown 形式的 `*強調*`
 
 Span-level HTML tags -- e.g. `<span>`, `<cite>`, or `<del>` -- can be
 used anywhere in a Markdown paragraph, list item, or header. If you
@@ -132,7 +138,11 @@ want, you can even use HTML tags instead of Markdown formatting; e.g. if
 you'd prefer to use HTML `<a>` or `<img>` tags instead of Markdown's
 link or image syntax, go right ahead.
 
-HTML 的跨度標間如 `<span>`, `<cite>` 或者 `<del>` 則不受限制，可以在 Markdown 的段落、清單或是檔頭裡任意使用。依照個人習慣，甚至可以不用 Markdown 格式，而採用 HTML 標籤來格式化。舉例說明：如果比較喜歡 HTML 的  `<a>` 或 `<img>` 標籤，可以直接使用這些標籤，而不用 Markdown 提供的連結或是影像標示語法。
+HTML 的跨度標間如 `<span>`, `<cite>` 或者 `<del>` 則不受限制，可以在
+Markdown 的段落、清單或是檔頭裡任意使用。依照個人習慣，甚至可以不用
+Markdown 格式，而採用 HTML 標籤來格式化。舉例說明：如果比較喜歡 HTML
+的  `<a>` 或 `<img>` 標籤，可以直接使用這些標籤，而不用 Markdown 提
+供的連結或是影像標示語法。
 
 Unlike block-level HTML tags, Markdown syntax *is* processed within
 span-level tags.
