@@ -925,3 +925,16 @@ Markdown provides backslash escapes for the following characters:
     .   dot
     !   exclamation mark
 
+    \   反斜線
+    `   反引號
+    *   星號
+    _   底線
+    {}  大括號
+    []  方括號
+    ()  括號
+    #   井字號
+	+	加號
+	-	減號
+    .   英文句點Ddot
+    !   驚嘆號
+
