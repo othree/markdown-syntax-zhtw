@@ -95,8 +95,7 @@ use HTML itself. There's no need to preface it or delimit it to
 indicate that you're switching from Markdown to HTML; you just use
 the tags.
 
-不在 Markdown 涵蓋範圍之外的標籤，都可以直接在文件裡面用 HTML 
-撰寫。不需要額外標註這是 HTML 或是 Markdown；只要直接加標籤就可
+不在 Markdown 涵蓋範圍之外的標籤，都可以直接在文件裡面用 HTML 撰寫。不需要額外標註這是 HTML 或是 Markdown；只要直接加標籤就可
 以了。
 
 The only restrictions are that block-level HTML elements -- e.g. `<div>`,
@@ -105,10 +104,7 @@ content by blank lines, and the start and end tags of the block should
 not be indented with tabs or spaces. Markdown is smart enough not
 to add extra (unwanted) `<p>` tags around HTML block-level tags.
 
-只有區塊元素──比如 `<div>`,`<table>`, `<pre>`, `<p>` 等標籤，必需在
-前後加上空白，以利與內容區隔。而且這些的開始與結尾標籤，不可以用
-tab 或是空白來縮排。Markdown 的產生器有智慧型判斷，可以避免在區塊
-標籤前後加上沒有必要的 `<p>` 標籤。
+只有區塊元素──比如 `<div>`,`<table>`, `<pre>`, `<p>` 等標籤，必需在前後加上空白，以利與內容區隔。而且這些的開始與結尾標籤，不可以用 tab 或是空白來縮排。Markdown 的產生器有智慧型判斷，可以避免在區塊標籤前後加上沒有必要的 `<p>` 標籤。
 
 
 For example, to add an HTML table to a Markdown article:
