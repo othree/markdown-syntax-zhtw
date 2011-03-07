@@ -1,5 +1,3 @@
-Notice: 請先保留原文
-
 Markdown: Syntax
 ================
 
@@ -110,9 +108,10 @@ to add extra (unwanted) `<p>` tags around HTML block-level tags.
 
 
 For example, to add an HTML table to a Markdown article:
+舉例說明，在 Markdown 文件裡加上一段 HTML 表格：
 
     This is a regular paragraph.
-
+    這是一般的段落
     <table>
         <tr>
             <td>Foo</td>
@@ -120,10 +119,12 @@ For example, to add an HTML table to a Markdown article:
     </table>
 
     This is another regular paragraph.
+    這是下一個段落
 
 Note that Markdown formatting syntax is not processed within block-level
 HTML tags. E.g., you can't use Markdown-style `*emphasis*` inside an
 HTML block.
+請注意，在 HTML 區塊標籤內，是不會對 Markdown 的語法進行處理的。例如， HTML 區塊內，無法使用 Markdown 形式的 `*強調`
 
 Span-level HTML tags -- e.g. `<span>`, `<cite>`, or `<del>` -- can be
 used anywhere in a Markdown paragraph, list item, or header. If you
@@ -131,9 +132,12 @@ want, you can even use HTML tags instead of Markdown formatting; e.g. if
 you'd prefer to use HTML `<a>` or `<img>` tags instead of Markdown's
 link or image syntax, go right ahead.
 
+HTML 的跨度標間如 `<span>`, `<cite>` 或者 `<del>` 則不受限制，可以在 Markdown 的段落、清單或是檔頭裡任意使用。依照個人習慣，甚至可以不用 Markdown 格式，而採用 HTML 標籤來格式化。舉例說明：如果比較喜歡 HTML 的  `<a>` 或 `<img>` 標籤，可以直接使用這些標籤，而不用 Markdown 提供的連結或是影像標示語法。
+
 Unlike block-level HTML tags, Markdown syntax *is* processed within
 span-level tags.
 
+HTML 跨度標籤和區塊標籤不同，在跨度標籤的範圍內， Markdown 的語法是有效的。
 
 <h3 id="autoescape">Automatic Escaping for Special Characters</h3>
 
