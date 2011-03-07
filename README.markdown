@@ -88,7 +88,10 @@ format. Thus, Markdown's formatting syntax only addresses issues that
 can be conveyed in plain text.
 
 Markdown 不是要來取代 HTML，甚至也沒有要和它相似，它的語法種類不多，
-只和 HTML 的一部分有關係，
+只和 HTML 的一部分有關係，重點 *不是* 要創造一種更容易插入 HTML 標籤
+的語法，我認為 HTML 已經很容易插入了，Markdown 的重點在讓文件更容易
+閱讀、編寫，HTML 是一種 *發佈* 的格式，Markdown 是一種 *編寫* 的格式，
+因此，Markdown 的格式語法只涵蓋純文字可以涵蓋的範圍。
 
 For any markup that is not covered by Markdown's syntax, you simply
 use HTML itself. There's no need to preface it or delimit it to
