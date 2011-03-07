@@ -25,7 +25,7 @@ Markdown: Syntax
 **Note:** This document is itself written using Markdown; you
 can [see the source for it by adding '.text' to the URL][src].
 
-  [src]: /projects/markdown/syntax.text
+  [src]: http://daringfireball.net/projects/markdown/syntax.text
 
 * * *
 
@@ -76,6 +76,8 @@ used email.
 Markdown's syntax is intended for one purpose: to be used as a
 format for *writing* for the web.
 
+Markdown 的語法有個主要的目的：用來作為一種網路內容的 *寫作* 用語言。
+
 Markdown is not a replacement for HTML, or even close to it. Its
 syntax is very small, corresponding only to a very small subset of
 HTML tags. The idea is *not* to create a syntax that makes it easier
@@ -84,6 +86,9 @@ insert. The idea for Markdown is to make it easy to read, write, and
 edit prose. HTML is a *publishing* format; Markdown is a *writing*
 format. Thus, Markdown's formatting syntax only addresses issues that
 can be conveyed in plain text.
+
+Markdown 不是要來取代 HTML，甚至也沒有要和它相似，它的語法種類不多，
+只和 HTML 的一部分有關係，
 
 For any markup that is not covered by Markdown's syntax, you simply
 use HTML itself. There's no need to preface it or delimit it to
