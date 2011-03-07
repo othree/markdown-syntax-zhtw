@@ -1,15 +1,6 @@
 Markdown: Syntax
 ================
 
-<ul id="ProjectSubmenu">
-    <li><a href="/projects/markdown/" title="Markdown Project Page">Main</a></li>
-    <li><a href="/projects/markdown/basics" title="Markdown Basics">Basics</a></li>
-    <li><a class="selected" title="Markdown Syntax Documentation">Syntax</a></li>
-    <li><a href="/projects/markdown/license" title="Pricing and License Information">License</a></li>
-    <li><a href="/projects/markdown/dingus" title="Online Markdown Web Form">Dingus</a></li>
-</ul>
-
-
 *   [Overview](#overview)
     *   [Philosophy](#philosophy)
     *   [Inline HTML](#html)
@@ -44,6 +35,8 @@ can [see the source for it by adding '.text' to the URL][src].
 
 Markdown is intended to be as easy-to-read and easy-to-write as is feasible.
 
+Markdown 將容易閱讀和容易寫作這兩點作為主要目標。
+
 Readability, however, is emphasized above all else. A Markdown-formatted
 document should be publishable as-is, as plain text, without looking
 like it's been marked up with tags or formatting instructions. While
@@ -51,6 +44,13 @@ Markdown's syntax has been influenced by several existing text-to-HTML
 filters -- including [Setext] [1], [atx] [2], [Textile] [3], [reStructuredText] [4],
 [Grutatext] [5], and [EtText] [6] -- the single biggest source of
 inspiration for Markdown's syntax is the format of plain text email.
+
+可讀性則是其中最重要的一個特點，一篇 Markdown 格式的文件應該要可以直
+接作為發佈用的文件，而不會讓人覺得他是使用像是邊簽語言之類的格式來編
+寫，Markdown 的文件格式受到很多的 text-to-HTML 格式的影響，包括 
+[Setext] [1]、[atx] [2]、[Textile] [3]、[reStructuredText] [4]、
+[Grutatext] [5] 和 [EtText] [6]，然而影響最大的其實是純文字的電子郵
+件。
 
   [1]: http://docutils.sourceforge.net/mirror/setext.html
   [2]: http://www.aaronsw.com/2002/atx/
@@ -66,7 +66,10 @@ look like \*emphasis\*. Markdown lists look like, well, lists. Even
 blockquotes look like quoted passages of text, assuming you've ever
 used email.
 
-
+為了這個目的，Markdown 的語法全部由標點符號來組成，標點符號的選擇是依
+據他們看起來樣子或是他們的意義慎重的考慮的，像是在文字兩旁加上星號，看
+起來就很像在 \*強調\* 。Markdow 的清單就很像是清單，區塊引研究很像是電
+子郵件的引言。
 
 <h3 id="html">Inline HTML</h3>
 
