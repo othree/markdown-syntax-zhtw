@@ -175,14 +175,23 @@ used to denote HTML entities. If you want to use them as literal
 characters, you must escape them as entities, e.g. <code>&amp;lt;</code>, and
 <code>&amp;amp;</code>.</p>
 
+<p>在 HTML 文件中，有兩個字元需要特殊處理： <code>&lt;</code> 和 <code>&amp;</code> 。 <code>&lt;</code> 符號用於起始
+標籤，<code>&amp;</code> 符號則用於標記 HTML 實體，如果你只是想要使用這些符號，你必須要
+使用實體的形式，像是 <code>&amp;lt;</code> 和 <code>&amp;amp;</code>。</p>
+
 <p>Ampersands in particular are bedeviling for web writers. If you want to
 write about 'AT&amp;T', you need to write '<code>AT&amp;amp;T</code>'. You even need to
 escape ampersands within URLs. Thus, if you want to link to:</p>
+
+<p><code>&amp;</code> 符號其實很讓寫作網路文件的人很困擾，如果你要打 'AT&amp;T' ，你必須要寫成
+'<code>AAT&amp;amp;T</code>' ，你還必須要轉換網址內的 <code>&amp;</code> 符號，如果你要連結到：</p>
 
 <pre><code>http://images.google.com/images?num=30&amp;q=larry+bird
 </code></pre>
 
 <p>you need to encode the URL as:</p>
+
+<p>你必須要把網址轉成：</p>
 
 <pre><code>http://images.google.com/images?num=30&amp;amp;q=larry+bird
 </code></pre>
@@ -190,6 +199,9 @@ escape ampersands within URLs. Thus, if you want to link to:</p>
 <p>in your anchor tag <code>href</code> attribute. Needless to say, this is easy to
 forget, and is probably the single most common source of HTML validation
 errors in otherwise well-marked-up web sites.</p>
+
+<p>才能放到你的連結標籤的 <code>href</code> 裡，不用說，這很容易忘記，可能是最大的
+HTML 標準檢查的錯誤來源。</p>
 
 <p>Markdown allows you to use these characters naturally, taking care of
 all the necessary escaping for you. If you use an ampersand as part of
@@ -1032,6 +1044,5 @@ _   底線
         </script>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
         <script src="Han-the-CSS-Reset/han.min.js"></script>
-        <script src="scripts/detect_cleartype.js"></script>
     </body>
 </html>
