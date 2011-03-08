@@ -167,19 +167,31 @@ used to denote HTML entities. If you want to use them as literal
 characters, you must escape them as entities, e.g. `&lt;`, and
 `&amp;`.
 
+在 HTML 文件中，有兩個字元需要特殊處理： `<` 和 `&` 。 `<` 符號用於起始
+標籤，`&` 符號則用於標記 HTML 實體，如果你只是想要使用這些符號，你必須要
+使用實體的形式，像是 `&lt;` 和 `&amp;`。
+
 Ampersands in particular are bedeviling for web writers. If you want to
 write about 'AT&T', you need to write '`AT&amp;T`'. You even need to
 escape ampersands within URLs. Thus, if you want to link to:
 
+`&` 符號其實很讓寫作網路文件的人很困擾，如果你要打 'AT&T' ，你必須要寫成
+'`AAT&amp;T`' ，你還必須要轉換網址內的 `&` 符號，如果你要連結到：
+
     http://images.google.com/images?num=30&q=larry+bird
 
 you need to encode the URL as:
+
+你必須要把網址轉成：
 
     http://images.google.com/images?num=30&amp;q=larry+bird
 
 in your anchor tag `href` attribute. Needless to say, this is easy to
 forget, and is probably the single most common source of HTML validation
 errors in otherwise well-marked-up web sites.
+
+才能放到你的連結標籤的 `href` 裡，不用說，這很容易忘記，可能是最大的
+HTML 標準檢查的錯誤來源。
 
 Markdown allows you to use these characters naturally, taking care of
 all the necessary escaping for you. If you use an ampersand as part of
