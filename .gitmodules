@@ -1,0 +1,3 @@
+[submodule "Han-the-CSS-Reset"]
+	path = Han-the-CSS-Reset
+	url = git://github.com/ethantw/Han-the-CSS-Reset.git
