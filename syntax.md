@@ -198,15 +198,25 @@ all the necessary escaping for you. If you use an ampersand as part of
 an HTML entity, it remains unchanged; otherwise it will be translated
 into `&amp;`.
 
+Markdown 允許你直接使用這些符號，但是你要小心跳脫字元的使用，如果你是在
+HTML 實體中使用 `&` 符號的話，它不會被轉換，而在其它情形下，它則會被轉換
+成 `&amp;`
+
 So, if you want to include a copyright symbol in your article, you can write:
+
+所以你如果要在文件中插入一個著作權的符號，你可以這樣寫：
 
     &copy;
 
 and Markdown will leave it alone. But if you write:
 
+Markdown 將不會對這段文字做修改，但是如果你這樣寫：
+
     AT&T
 
 Markdown will translate it to:
+
+Markdown 就會將它轉為：
 
     AT&amp;T
 
@@ -214,9 +224,15 @@ Similarly, because Markdown supports [inline HTML](#html), if you use
 angle brackets as delimiters for HTML tags, Markdown will treat them as
 such. But if you write:
 
+類似的狀況也會發生在 `<` 符號上，因為 Markdown 支援 [inline HTML](#html) ，
+如果你是使用 `<` 符號作為 HTML 標籤使用，那 Markdown 也不會對它做任何轉換，
+但是如果你是寫：
+
     4 < 5
 
 Markdown will translate it to:
+
+Markdown 將會把它轉換為：
 
     4 &lt; 5
 
@@ -226,6 +242,10 @@ Markdown to write about HTML code. (As opposed to raw HTML, which is a
 terrible format for writing about HTML syntax, because every single `<`
 and `&` in your example code needs to be escaped.)
 
+不過要注意的是，code 範圍內，不論是行內還是區塊， `<` 和 `&` 兩個符號都 *一定*
+會被轉換成 HTML 實體，這項特性讓你可以很容易的用 Markdown 寫 HTML code 
+（和 HTML 相對而言， HTML 語法中，你要把所有的 `<` 和 `&` 都轉換為 HTML 實體，
+你才能再 HTML 文件裡面寫出 HTML code）
 
 * * *
 
