@@ -260,19 +260,34 @@ by one or more blank lines. (A blank line is any line that looks like a
 blank line -- a line containing nothing but spaces or tabs is considered
 blank.) Normal paragraphs should not be indented with spaces or tabs.
 
+一個段落是由一個或以上的連接的行句組成，而兩個以上的空行則會切分出不同的段落
+（空行的定義是顯示上看起來像是空行，就被視為空行，例如有一行只有空白和 tab，
+那該行也會被視為空行），一般的段落不需要用空白或斷行縮排。
+
 The implication of the "one or more consecutive lines of text" rule is
 that Markdown supports "hard-wrapped" text paragraphs. This differs
 significantly from most other text-to-HTML formatters (including Movable
 Type's "Convert Line Breaks" option) which translate every line break
 character in a paragraph into a `<br />` tag.
 
+「一個或以上的連接的行句組成」這句其實暗示了 Markdow 允許段落內的強迫斷行，
+這個特性和其他大部分的 text-to-HTML 格式不一樣（包括 MovableType 的 
+"Convert Line Breaks" 選項），其它的格式會把每個斷行都轉成 `<br />` 標籤。
+
+
 When you *do* want to insert a `<br />` break tag using Markdown, you
 end a line with two or more spaces, then type return.
+
+如果你 *真的* 是想要插入 `<br />` 標籤的話，在行尾加上兩個以上的空白，然後按 enter。
 
 Yes, this takes a tad more effort to create a `<br />`, but a simplistic
 "every line break is a `<br />`" rule wouldn't work for Markdown.
 Markdown's email-style [blockquoting][bq] and multi-paragraph [list items][l]
 work best -- and look better -- when you format them with hard breaks.
+
+是的，這確實讓你要花比較多功夫插入 `<br />` ，但是「每個換行都轉換為 `<br />`」
+的方法在 Markdown 中並不適合， Markdown 的 email 式的 [區塊引言][bq] 和多段落的
+[清單][l] 在使用換行來排版的時候，不但更好用，還更好看！
 
   [bq]: #blockquote
   [l]:  #list
