@@ -298,8 +298,13 @@ work best -- and look better -- when you format them with hard breaks.
 
 Markdown supports two styles of headers, [Setext] [1] and [atx] [2].
 
+Markdown 支援兩種標題的語法，[Setext] [1] 和 [atx] [2] 形式。
+
 Setext-style headers are "underlined" using equal signs (for first-level
 headers) and dashes (for second-level headers). For example:
+
+Setext 形式是用底線的形式，利用 `=` （最高階標題）和 `-` （第二階標題），
+例如：
 
     This is an H1
     =============
@@ -309,8 +314,12 @@ headers) and dashes (for second-level headers). For example:
 
 Any number of underlining `=`'s or `-`'s will work.
 
+任何數量的 `=` 和 `-` 都可以有效果。
+
 Atx-style headers use 1-6 hash characters at the start of the line,
 corresponding to header levels 1-6. For example:
+
+Atx 形式在行首插入 1 到 6 個 `#` ，對應到標題 1 到 6 階，例如：
 
     # This is an H1
 
@@ -323,6 +332,10 @@ cosmetic -- you can use this if you think it looks better. The
 closing hashes don't even need to match the number of hashes
 used to open the header. (The number of opening hashes
 determines the header level.) :
+
+你可以選擇性的 "關閉" atx 樣式的標題，這純粹只是美觀用的，你如果覺得這樣
+看起來比較好，就可以加上 `#` 在行尾，而行尾的 `#` 數量也不用和開頭一樣
+（行首的數量決定標題的階數）：
 
     # This is an H1 #
 
