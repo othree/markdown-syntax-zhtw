@@ -351,6 +351,10 @@ familiar with quoting passages of text in an email message, then you
 know how to create a blockquote in Markdown. It looks best if you hard
 wrap the text and put a `>` before every line:
 
+Markdown 使用 email 形式的區塊引言，如果你很清楚在 email 信件中如何引言，
+你就知道如何在 Markdown 文件中建立一個區塊引言，那會看起來像是你強迫斷行，
+然後在每行的最前面加上 `>` ：
+
     > This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
     > consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
     > Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
@@ -360,6 +364,8 @@ wrap the text and put a `>` before every line:
 
 Markdown allows you to be lazy and only put the `>` before the first
 line of a hard-wrapped paragraph:
+
+Markdown 也允許你只在整個段落的第一行最前面加上 `>` ：
 
     > This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
     consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
@@ -371,6 +377,8 @@ line of a hard-wrapped paragraph:
 Blockquotes can be nested (i.e. a blockquote-in-a-blockquote) by
 adding additional levels of `>`:
 
+區塊引言可以有階層（例如：引言內的引言），只要根據層數加上不同數量的 `>` ：
+
     > This is the first level of quoting.
     >
     > > This is nested blockquote.
@@ -379,6 +387,9 @@ adding additional levels of `>`:
 
 Blockquotes can contain other Markdown elements, including headers, lists,
 and code blocks:
+
+引言的區塊內也可以使用其他的 Markdown 語法，包括標題、清單、程式碼區塊等：
+
 
 	> ## This is a header.
 	> 
@@ -393,6 +404,8 @@ Any decent text editor should make email-style quoting easy. For
 example, with BBEdit, you can make a selection and choose Increase
 Quote Level from the Text menu.
 
+任何標準的文字編輯器都可以簡單的建立 email 樣式的引言，例如 BBEdit ，你可以
+選取文字後然後從選單中選擇 *增加引言階層* 。
 
 <h3 id="list">Lists</h3>
 
