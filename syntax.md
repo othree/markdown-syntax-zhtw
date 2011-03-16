@@ -411,8 +411,12 @@ Quote Level from the Text menu.
 
 Markdown supports ordered (numbered) and unordered (bulleted) lists.
 
+Markdown 支援有序清單和無序清單。
+
 Unordered lists use asterisks, pluses, and hyphens -- interchangably
 -- as list markers:
+
+無序清單使用星號、加號或是減號作為清單標記：
 
     *   Red
     *   Green
@@ -420,17 +424,23 @@ Unordered lists use asterisks, pluses, and hyphens -- interchangably
 
 is equivalent to:
 
+等同於：
+
     +   Red
     +   Green
     +   Blue
 
 and:
 
+和：
+
     -   Red
     -   Green
     -   Blue
 
 Ordered lists use numbers followed by periods:
+
+有序清單則使用數字接著一個英文句點：
 
     1.  Bird
     2.  McHale
@@ -440,6 +450,9 @@ It's important to note that the actual numbers you use to mark the
 list have no effect on the HTML output Markdown produces. The HTML
 Markdown produces from the above list is:
 
+很重要的一點是：你的清單標記上的數字並不會影響輸出的 HTML 結果，上面
+的清單所產生的 HTML 標記為：
+
     <ol>
     <li>Bird</li>
     <li>McHale</li>
@@ -448,11 +461,15 @@ Markdown produces from the above list is:
 
 If you instead wrote the list in Markdown like this:
 
+如果你的清單標記寫成：
+
     1.  Bird
     1.  McHale
     1.  Parish
 
 or even:
+
+或甚至是：
 
     3. Bird
     1. McHale
@@ -463,9 +480,15 @@ you can use ordinal numbers in your ordered Markdown lists, so that
 the numbers in your source match the numbers in your published HTML.
 But if you want to be lazy, you don't have to.
 
+你都會得到完全一樣的 HTML 輸出，重點在於，你可以讓你的 Markdown 文件的清單
+數字和輸出的結果一樣，或是你懶一點，你可以完全不用在意數字的正確性。
+
 If you do use lazy list numbering, however, you should still start the
 list with the number 1. At some point in the future, Markdown may support
 starting ordered lists at an arbitrary number.
+
+如果你使用懶惰的寫法，建議第一個項目最好還是從 1. 開始，因為 Markdown 未來
+可能會支援有序清單的 start 屬性。
 
 List markers typically start at the left margin, but may be indented by
 up to three spaces. List markers must be followed by one or more spaces
