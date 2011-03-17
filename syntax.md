@@ -298,8 +298,13 @@ work best -- and look better -- when you format them with hard breaks.
 
 Markdown supports two styles of headers, [Setext] [1] and [atx] [2].
 
+Markdown 支援兩種標題的語法，[Setext] [1] 和 [atx] [2] 形式。
+
 Setext-style headers are "underlined" using equal signs (for first-level
 headers) and dashes (for second-level headers). For example:
+
+Setext 形式是用底線的形式，利用 `=` （最高階標題）和 `-` （第二階標題），
+例如：
 
     This is an H1
     =============
@@ -309,8 +314,12 @@ headers) and dashes (for second-level headers). For example:
 
 Any number of underlining `=`'s or `-`'s will work.
 
+任何數量的 `=` 和 `-` 都可以有效果。
+
 Atx-style headers use 1-6 hash characters at the start of the line,
 corresponding to header levels 1-6. For example:
+
+Atx 形式在行首插入 1 到 6 個 `#` ，對應到標題 1 到 6 階，例如：
 
     # This is an H1
 
@@ -323,6 +332,10 @@ cosmetic -- you can use this if you think it looks better. The
 closing hashes don't even need to match the number of hashes
 used to open the header. (The number of opening hashes
 determines the header level.) :
+
+你可以選擇性的 "關閉" atx 樣式的標題，這純粹只是美觀用的，你如果覺得這樣
+看起來比較好，就可以加上 `#` 在行尾，而行尾的 `#` 數量也不用和開頭一樣
+（行首的數量決定標題的階數）：
 
     # This is an H1 #
 
@@ -338,6 +351,10 @@ familiar with quoting passages of text in an email message, then you
 know how to create a blockquote in Markdown. It looks best if you hard
 wrap the text and put a `>` before every line:
 
+Markdown 使用 email 形式的區塊引言，如果你很清楚在 email 信件中如何引言，
+你就知道如何在 Markdown 文件中建立一個區塊引言，那會看起來像是你強迫斷行，
+然後在每行的最前面加上 `>` ：
+
     > This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
     > consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
     > Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
@@ -347,6 +364,8 @@ wrap the text and put a `>` before every line:
 
 Markdown allows you to be lazy and only put the `>` before the first
 line of a hard-wrapped paragraph:
+
+Markdown 也允許你只在整個段落的第一行最前面加上 `>` ：
 
     > This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
     consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
@@ -358,6 +377,8 @@ line of a hard-wrapped paragraph:
 Blockquotes can be nested (i.e. a blockquote-in-a-blockquote) by
 adding additional levels of `>`:
 
+區塊引言可以有階層（例如：引言內的引言），只要根據層數加上不同數量的 `>` ：
+
     > This is the first level of quoting.
     >
     > > This is nested blockquote.
@@ -366,6 +387,9 @@ adding additional levels of `>`:
 
 Blockquotes can contain other Markdown elements, including headers, lists,
 and code blocks:
+
+引言的區塊內也可以使用其他的 Markdown 語法，包括標題、清單、程式碼區塊等：
+
 
 	> ## This is a header.
 	> 
@@ -380,13 +404,19 @@ Any decent text editor should make email-style quoting easy. For
 example, with BBEdit, you can make a selection and choose Increase
 Quote Level from the Text menu.
 
+任何標準的文字編輯器都可以簡單的建立 email 樣式的引言，例如 BBEdit ，你可以
+選取文字後然後從選單中選擇 *增加引言階層* 。
 
 <h3 id="list">Lists</h3>
 
 Markdown supports ordered (numbered) and unordered (bulleted) lists.
 
+Markdown 支援有序清單和無序清單。
+
 Unordered lists use asterisks, pluses, and hyphens -- interchangably
 -- as list markers:
+
+無序清單使用星號、加號或是減號作為清單標記：
 
     *   Red
     *   Green
@@ -394,17 +424,23 @@ Unordered lists use asterisks, pluses, and hyphens -- interchangably
 
 is equivalent to:
 
+等同於：
+
     +   Red
     +   Green
     +   Blue
 
 and:
 
+和：
+
     -   Red
     -   Green
     -   Blue
 
 Ordered lists use numbers followed by periods:
+
+有序清單則使用數字接著一個英文句點：
 
     1.  Bird
     2.  McHale
@@ -414,6 +450,9 @@ It's important to note that the actual numbers you use to mark the
 list have no effect on the HTML output Markdown produces. The HTML
 Markdown produces from the above list is:
 
+很重要的一點是：你的清單標記上的數字並不會影響輸出的 HTML 結果，上面
+的清單所產生的 HTML 標記為：
+
     <ol>
     <li>Bird</li>
     <li>McHale</li>
@@ -422,11 +461,15 @@ Markdown produces from the above list is:
 
 If you instead wrote the list in Markdown like this:
 
+如果你的清單標記寫成：
+
     1.  Bird
     1.  McHale
     1.  Parish
 
 or even:
+
+或甚至是：
 
     3. Bird
     1. McHale
@@ -437,15 +480,26 @@ you can use ordinal numbers in your ordered Markdown lists, so that
 the numbers in your source match the numbers in your published HTML.
 But if you want to be lazy, you don't have to.
 
+你都會得到完全一樣的 HTML 輸出，重點在於，你可以讓你的 Markdown 文件的清單
+數字和輸出的結果一樣，或是你懶一點，你可以完全不用在意數字的正確性。
+
 If you do use lazy list numbering, however, you should still start the
 list with the number 1. At some point in the future, Markdown may support
 starting ordered lists at an arbitrary number.
+
+如果你使用懶惰的寫法，建議第一個項目最好還是從 1. 開始，因為 Markdown 未來
+可能會支援有序清單的 start 屬性。
 
 List markers typically start at the left margin, but may be indented by
 up to three spaces. List markers must be followed by one or more spaces
 or a tab.
 
+清單項目標記通常是放在最左邊，但是其實也可以縮排，最多三個空白，項目標記後面
+則一定要接著至少一個空白或 tab。
+
 To make lists look nice, you can wrap items with hanging indents:
+
+要讓清單看起來更漂亮，你可以把內容用固定的縮排整理好：
 
     *   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
         Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
@@ -454,6 +508,8 @@ To make lists look nice, you can wrap items with hanging indents:
         Suspendisse id sem consectetuer libero luctus adipiscing.
 
 But if you want to be lazy, you don't have to:
+
+但是如果你很懶，那也不一定需要：
 
     *   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
     Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
@@ -464,10 +520,15 @@ But if you want to be lazy, you don't have to:
 If list items are separated by blank lines, Markdown will wrap the
 items in `<p>` tags in the HTML output. For example, this input:
 
+如果清單項目間用空行分開， Markdown 會把項目的內容在輸出時用 `<p>` 
+標籤包起來，舉例來說：
+
     *   Bird
     *   Magic
 
 will turn into:
+
+會被轉換為：
 
     <ul>
     <li>Bird</li>
@@ -476,11 +537,15 @@ will turn into:
 
 But this:
 
+但是這個：
+
     *   Bird
 
     *   Magic
 
 will turn into:
+
+會被轉換為：
 
     <ul>
     <li><p>Bird</p></li>
@@ -490,6 +555,9 @@ will turn into:
 List items may consist of multiple paragraphs. Each subsequent
 paragraph in a list item must be indented by either 4 spaces
 or one tab:
+
+清單項目可以包含多個段落，每個項目下的端落都必須要縮排 4 個空白或
+是一個 tab ：
 
     1.  This is a list item with two paragraphs. Lorem ipsum dolor
         sit amet, consectetuer adipiscing elit. Aliquam hendrerit
@@ -505,6 +573,9 @@ It looks nice if you indent every line of the subsequent
 paragraphs, but here again, Markdown will allow you to be
 lazy:
 
+如果你每行都有縮排，看起來會看好很多，當然，再次的，如果你很懶惰，
+Markdown 也允許：
+
     *   This is a list item with two paragraphs.
 
         This is the second paragraph in the list item. You're
@@ -516,6 +587,8 @@ lazy:
 To put a blockquote within a list item, the blockquote's `>`
 delimiters need to be indented:
 
+如果要在清單項目內放進引言，那 `>` 就需要縮排：
+
     *   A list item with a blockquote:
 
         > This is a blockquote
@@ -523,6 +596,9 @@ delimiters need to be indented:
 
 To put a code block within a list item, the code block needs
 to be indented *twice* -- 8 spaces or two tabs:
+
+如果要放程式碼區塊的話，該區塊就需要縮排 *兩次* ，也就是 8 個
+空白或是兩個 tab：
 
     *   A list item with a code block:
 
@@ -532,10 +608,15 @@ to be indented *twice* -- 8 spaces or two tabs:
 It's worth noting that it's possible to trigger an ordered list by
 accident, by writing something like this:
 
+當然，項目清單很可能會不小心產生，像是下面這樣的寫法：
+
     1986. What a great season.
 
 In other words, a *number-period-space* sequence at the beginning of a
 line. To avoid this, you can backslash-escape the period:
+
+換句話說，也就是在行首出現 *數字-句點-空白* ，要避免這樣的狀況，你
+可以在句點前面加上反斜線。
 
     1986\. What a great season.
 
@@ -548,14 +629,23 @@ markup source code. Rather than forming normal paragraphs, the lines
 of a code block are interpreted literally. Markdown wraps a code block
 in both `<pre>` and `<code>` tags.
 
+和程式相關的寫作或是標籤語言原始碼通常會有已經排版好的程式碼區塊，通常這些
+區塊我們並不希望它照一般段落文件的方式去排版，而是照原來的樣子顯示，Markdown 
+會用 `<pre>` 和 `<code>` 標籤來把程式碼區塊包起來。
+
 To produce a code block in Markdown, simply indent every line of the
 block by at least 4 spaces or 1 tab. For example, given this input:
+
+在 Markdown 中要建立程式碼區塊很簡單，只要簡單的縮排 4 個空白或是 1 個 tab 就可以，
+例如，下面的輸入：
 
     This is a normal paragraph:
 
         This is a code block.
 
 Markdown will generate:
+
+Markdown 會轉換成：
 
     <p>This is a normal paragraph:</p>
 
@@ -565,6 +655,8 @@ Markdown will generate:
 One level of indentation -- 4 spaces or 1 tab -- is removed from each
 line of the code block. For example, this:
 
+這個每行一階的縮排（4 個空白或是 1 個 tab），都會被移除，例如：
+
     Here is an example of AppleScript:
 
         tell application "Foo"
@@ -572,6 +664,8 @@ line of the code block. For example, this:
         end tell
 
 will turn into:
+
+會被轉換為：
 
     <p>Here is an example of AppleScript:</p>
 
@@ -583,17 +677,26 @@ will turn into:
 A code block continues until it reaches a line that is not indented
 (or the end of the article).
 
+一個程式碼區塊會一直持續到碰到沒有縮排的行（或是文件結尾）。
+
 Within a code block, ampersands (`&`) and angle brackets (`<` and `>`)
 are automatically converted into HTML entities. This makes it very
 easy to include example HTML source code using Markdown -- just paste
 it and indent it, and Markdown will handle the hassle of encoding the
 ampersands and angle brackets. For example, this:
 
+在程式碼區塊裡面， `&` 、 `<` 和 `>` 會自動轉成 HTML 實體，這樣的方式會讓
+你非常容易使用 Markdown 插入範例用的 HTML 原始碼，只需要複製貼上，然後縮
+排就可以了，剩下的 Markdown 都會幫你處理，例如：
+
+
         <div class="footer">
             &copy; 2004 Foo Corporation
         </div>
 
 will turn into:
+
+會被轉換為：
 
     <pre><code>&lt;div class="footer"&gt;
         &amp;copy; 2004 Foo Corporation
@@ -604,7 +707,8 @@ Regular Markdown syntax is not processed within code blocks. E.g.,
 asterisks are just literal asterisks within a code block. This means
 it's also easy to use Markdown to write about Markdown's own syntax.
 
-
+程式碼區塊中，一般的 Markdown 語法不會被轉換，像是星號就只會是星號，
+這表示你可以很容易用 Markdown 語法寫 Markdown 語法相關的文件。
 
 <h3 id="hr">Horizontal Rules</h3>
 
@@ -612,6 +716,10 @@ You can produce a horizontal rule tag (`<hr />`) by placing three or
 more hyphens, asterisks, or underscores on a line by themselves. If you
 wish, you may use spaces between the hyphens or asterisks. Each of the
 following lines will produce a horizontal rule:
+
+你可以用在一行內用三個或以上的星號、減號、底線來建立一個分隔線，
+行內不能有其他東西，你也可以在星號中間插入空白，下面每種寫法都可
+以建立分隔線：
 
     * * *
 
