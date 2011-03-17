@@ -494,7 +494,12 @@ List markers typically start at the left margin, but may be indented by
 up to three spaces. List markers must be followed by one or more spaces
 or a tab.
 
+清單項目標記通常是放在最左邊，但是其實也可以縮排，最多三個空白，項目標記後面
+則一定要接著至少一個空白或 tab。
+
 To make lists look nice, you can wrap items with hanging indents:
+
+要讓清單看起來更漂亮，你可以把內容用固定的縮排整理好：
 
     *   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
         Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
@@ -503,6 +508,8 @@ To make lists look nice, you can wrap items with hanging indents:
         Suspendisse id sem consectetuer libero luctus adipiscing.
 
 But if you want to be lazy, you don't have to:
+
+但是如果你很懶，那也不一定需要：
 
     *   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
     Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
@@ -513,10 +520,15 @@ But if you want to be lazy, you don't have to:
 If list items are separated by blank lines, Markdown will wrap the
 items in `<p>` tags in the HTML output. For example, this input:
 
+如果清單項目間用空行分開， Markdown 會把項目的內容在輸出時用 `<p>` 
+標籤包起來，舉例來說：
+
     *   Bird
     *   Magic
 
 will turn into:
+
+會被轉換為：
 
     <ul>
     <li>Bird</li>
@@ -525,11 +537,15 @@ will turn into:
 
 But this:
 
+但是這個：
+
     *   Bird
 
     *   Magic
 
 will turn into:
+
+會被轉換為：
 
     <ul>
     <li><p>Bird</p></li>
@@ -539,6 +555,9 @@ will turn into:
 List items may consist of multiple paragraphs. Each subsequent
 paragraph in a list item must be indented by either 4 spaces
 or one tab:
+
+清單項目可以包含多個段落，每個項目下的端落都必須要縮排 4 個空白或
+是一個 tab ：
 
     1.  This is a list item with two paragraphs. Lorem ipsum dolor
         sit amet, consectetuer adipiscing elit. Aliquam hendrerit
@@ -554,6 +573,9 @@ It looks nice if you indent every line of the subsequent
 paragraphs, but here again, Markdown will allow you to be
 lazy:
 
+如果你每行都有縮排，看起來會看好很多，當然，再次的，如果你很懶惰，
+Markdown 也允許：
+
     *   This is a list item with two paragraphs.
 
         This is the second paragraph in the list item. You're
@@ -565,6 +587,8 @@ lazy:
 To put a blockquote within a list item, the blockquote's `>`
 delimiters need to be indented:
 
+如果要在清單項目內放進引言，那 `>` 就需要縮排：
+
     *   A list item with a blockquote:
 
         > This is a blockquote
@@ -572,6 +596,9 @@ delimiters need to be indented:
 
 To put a code block within a list item, the code block needs
 to be indented *twice* -- 8 spaces or two tabs:
+
+如果要放程式碼區塊的話，該區塊就需要縮排 *兩次* ，也就是 8 個
+空白或是兩個 tab：
 
     *   A list item with a code block:
 
@@ -581,10 +608,15 @@ to be indented *twice* -- 8 spaces or two tabs:
 It's worth noting that it's possible to trigger an ordered list by
 accident, by writing something like this:
 
+當然，項目清單很可能會不小心產生，像是下面這樣的寫法：
+
     1986. What a great season.
 
 In other words, a *number-period-space* sequence at the beginning of a
 line. To avoid this, you can backslash-escape the period:
+
+換句話說，也就是在行首出現 *數字-句點-空白* ，要避免這樣的狀況，你
+可以在句點前面加上反斜線。
 
     1986\. What a great season.
 
