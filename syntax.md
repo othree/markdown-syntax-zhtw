@@ -629,14 +629,23 @@ markup source code. Rather than forming normal paragraphs, the lines
 of a code block are interpreted literally. Markdown wraps a code block
 in both `<pre>` and `<code>` tags.
 
+和程式相關的寫作或是標籤語言原始碼通常會有已經排版好的程式碼區塊，通常這些
+區塊我們並不希望它照一般段落文件的方式去排版，而是照原來的樣子顯示，Markdown 
+會用 `<pre>` 和 `<code>` 標籤來把程式碼區塊包起來。
+
 To produce a code block in Markdown, simply indent every line of the
 block by at least 4 spaces or 1 tab. For example, given this input:
+
+在 Markdown 中要建立程式碼區塊很簡單，只要簡單的縮排 4 個空白或是 1 個 tab 就可以，
+例如，下面的輸入：
 
     This is a normal paragraph:
 
         This is a code block.
 
 Markdown will generate:
+
+Markdown 會轉換成：
 
     <p>This is a normal paragraph:</p>
 
@@ -646,6 +655,8 @@ Markdown will generate:
 One level of indentation -- 4 spaces or 1 tab -- is removed from each
 line of the code block. For example, this:
 
+這個每行一階的縮排（4 個空白或是 1 個 tab），都會被移除，例如：
+
     Here is an example of AppleScript:
 
         tell application "Foo"
@@ -653,6 +664,8 @@ line of the code block. For example, this:
         end tell
 
 will turn into:
+
+會被轉換為：
 
     <p>Here is an example of AppleScript:</p>
 
@@ -664,17 +677,26 @@ will turn into:
 A code block continues until it reaches a line that is not indented
 (or the end of the article).
 
+一個程式碼區塊會一直持續到碰到沒有縮排的行（或是文件結尾）。
+
 Within a code block, ampersands (`&`) and angle brackets (`<` and `>`)
 are automatically converted into HTML entities. This makes it very
 easy to include example HTML source code using Markdown -- just paste
 it and indent it, and Markdown will handle the hassle of encoding the
 ampersands and angle brackets. For example, this:
 
+在程式碼區塊裡面， `&` 、 `<` 和 `>` 會自動轉成 HTML 實體，這樣的方式會讓
+你非常容易使用 Markdown 插入範例用的 HTML 原始碼，只需要複製貼上，然後縮
+排就可以了，剩下的 Markdown 都會幫你處理，例如：
+
+
         <div class="footer">
             &copy; 2004 Foo Corporation
         </div>
 
 will turn into:
+
+會被轉換為：
 
     <pre><code>&lt;div class="footer"&gt;
         &amp;copy; 2004 Foo Corporation
@@ -685,7 +707,8 @@ Regular Markdown syntax is not processed within code blocks. E.g.,
 asterisks are just literal asterisks within a code block. This means
 it's also easy to use Markdown to write about Markdown's own syntax.
 
-
+程式碼區塊中，一般的 Markdown 語法不會被轉換，像是星號就只會是星號，
+這表示你可以很容易用 Markdown 語法寫 Markdown 語法相關的文件。
 
 <h3 id="hr">Horizontal Rules</h3>
 
@@ -693,6 +716,10 @@ You can produce a horizontal rule tag (`<hr />`) by placing three or
 more hyphens, asterisks, or underscores on a line by themselves. If you
 wish, you may use spaces between the hyphens or asterisks. Each of the
 following lines will produce a horizontal rule:
+
+你可以用在一行內用三個或以上的星號、減號、底線來建立一個分隔線，
+行內不能有其他東西，你也可以在星號中間插入空白，下面每種寫法都可
+以建立分隔線：
 
     * * *
 
