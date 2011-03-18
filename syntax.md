@@ -1142,6 +1142,6 @@ Markdown provides backslash escapes for the following characters:
     #   井字號
 	+	加號
 	-	減號
-    .   英文句點Ddot
+    .   英文句點
     !   驚嘆號
 
