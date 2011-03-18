@@ -740,18 +740,28 @@ following lines will produce a horizontal rule:
 
 Markdown supports two style of links: *inline* and *reference*.
 
+Markdown 支援兩種形式的連結語法： *行內* 和 *參考* 兩種形式。
+
 In both styles, the link text is delimited by [square brackets].
+
+不管是哪一種，連結的文字都是用 [方括號] 來標記。
 
 To create an inline link, use a set of regular parentheses immediately
 after the link text's closing square bracket. Inside the parentheses,
 put the URL where you want the link to point, along with an *optional*
 title for the link, surrounded in quotes. For example:
 
+要建立一個行內形式的連結，只要在方塊括號後面馬上接著括號並插入網址連結即可，
+如果你還想要加上連結的 title 文字，只要在網址後面，用雙引號把 title 文字
+包起來即可，例如：
+
     This is [an example](http://example.com/ "Title") inline link.
 
     [This link](http://example.net/) has no title attribute.
 
 Will produce:
+
+會產生：
 
     <p>This is <a href="http://example.com/" title="Title">
     an example</a> inline link.</p>
@@ -762,23 +772,34 @@ Will produce:
 If you're referring to a local resource on the same server, you can
 use relative paths:
 
+如果你是要連結到同樣主機的資源，你可以使用相對路徑：
+
     See my [About](/about/) page for details.   
 
 Reference-style links use a second set of square brackets, inside
 which you place a label of your choosing to identify the link:
 
+參考形式的連結使用另外一個方括號接在連結文字的括號後面，而在第二個方括號
+裡面要填入連結的辨識用的標籤：
+
     This is [an example][id] reference-style link.
 
 You can optionally use a space to separate the sets of brackets:
+
+你也可以選擇性的在兩個方括號中間加上空白：
 
     This is [an example] [id] reference-style link.
 
 Then, anywhere in the document, you define your link label like this,
 on a line by itself:
 
+接著，在文件的任意處，你可以把這個標籤的連結內容定義出來：
+
     [id]: http://example.com/  "Optional Title Here"
 
 That is:
+
+連結定義的形式為：
 
 *   Square brackets containing the link identifier (optionally
     indented from the left margin using up to three spaces);
@@ -788,7 +809,15 @@ That is:
 *   optionally followed by a title attribute for the link, enclosed
     in double or single quotes, or enclosed in parentheses.
 
+*   方括號，裡面輸入連結的辨識用標籤
+*   接著一個分號
+*   接著一個以上的空白或 tab
+*   接著連結的網址
+*   選擇性的接著 title 內容，可以用單引號、雙引號或是括弧包著
+
 The following three link definitions are equivalent:
+
+下面這三種連結的定義都是相同：
 
 	[foo]: http://example.com/  "Optional Title Here"
 	[foo]: http://example.com/  'Optional Title Here'
@@ -797,12 +826,20 @@ The following three link definitions are equivalent:
 **Note:** There is a known bug in Markdown.pl 1.0.1 which prevents
 single quotes from being used to delimit link titles.
 
+**Note:** 有一個已知的問題是 Markdown.pl 1.0.1 會忽略單引號包起來的
+連結 title。
+
 The link URL may, optionally, be surrounded by angle brackets:
+
+連結網址也可以用角括號包起來：
 
     [id]: <http://example.com/>  "Optional Title Here"
 
 You can put the title attribute on the next line and use extra spaces
 or tabs for padding, which tends to look better with longer URLs:
+
+你也可以把 title 屬性放到下一行，也可以加一些縮排，網址太長的話，這樣
+會比較好看：
 
     [id]: http://example.com/longish/path/to/resource/here
         "Optional Title Here"
@@ -810,9 +847,14 @@ or tabs for padding, which tends to look better with longer URLs:
 Link definitions are only used for creating links during Markdown
 processing, and are stripped from your document in the HTML output.
 
+網址定義只有在產生連結的時候用到，並不會直接出現在文件之中。
+
 Link definition names may consist of letters, numbers, spaces, and
 punctuation -- but they are *not* case sensitive. E.g. these two
 links:
+
+連結辨識標籤可以有字母、數字、空白和標點符號，但是並 *不* 分大小寫，
+因此下面兩個連結是一樣的：
 
 	[link text][a]
 	[link text][A]
