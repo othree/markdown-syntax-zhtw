@@ -866,18 +866,28 @@ link, in which case the link text itself is used as the name.
 Just use an empty set of square brackets -- e.g., to link the word
 "Google" to the google.com web site, you could simply write:
 
+*預設的連結標籤* 功能讓你可以省略指定連結標籤，這種情形下，連結標籤
+和連結文字會視為相同，要用預設連結標籤只要在連結文字後面加上一個空的
+角括號，如果你要讓 "Google" 連結到 google.com，你可以簡化成：
+
 	[Google][]
 
 And then define the link:
+
+然後定義連結內容：
 
 	[Google]: http://google.com/
 
 Because link names may contain spaces, this shortcut even works for
 multiple words in the link text:
 
+由於連結文字可能包含空白，所以這種簡化的標籤內也可以包含多個文字：
+
 	Visit [Daring Fireball][] for more information.
 
 And then define the link:
+
+然後接著定義連結：
 	
 	[Daring Fireball]: http://daringfireball.net/
 
