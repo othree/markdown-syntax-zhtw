@@ -1215,6 +1215,11 @@ formatting syntax. For example, if you wanted to surround a word
 with literal asterisks (instead of an HTML `<em>` tag), you can use
 backslashes before the asterisks, like this:
 
+Markdown 可以利用反斜線來插入一些在語法中有其他意義的符號，例如：
+如果你想要用星號加在文字旁邊的方式來做出強調效果（但是不是用 `<em>` 標籤），
+你可以在星號的前面加上反斜線：
+
+
     \*literal asterisks\*
 
 Markdown provides backslash escapes for the following characters:
@@ -1231,6 +1236,8 @@ Markdown provides backslash escapes for the following characters:
 	-	minus sign (hyphen)
     .   dot
     !   exclamation mark
+
+Markdown 支援在下面這些符號前面加上反斜線來幫助插入普通的符號：
 
     \   反斜線
     `   反引號
