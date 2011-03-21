@@ -968,6 +968,10 @@ emphasis. Text wrapped with one `*` or `_` will be wrapped with an
 HTML `<em>` tag; double `*`'s or `_`'s will be wrapped with an HTML
 `<strong>` tag. E.g., this input:
 
+Markdown 使用星號 (`*`) 和底線 (`_`) 作為標記強調字詞的符號，被 `*` 或
+`_` 包圍的字詞會被轉成用 `<em>` 標籤包圍，用兩個 `*` 或 `_` 包起來的話，
+則會被轉成 `<strong>` ，例如：
+
     *single asterisks*
 
     _single underscores_
@@ -977,6 +981,8 @@ HTML `<em>` tag; double `*`'s or `_`'s will be wrapped with an HTML
     __double underscores__
 
 will produce:
+
+會轉成：
 
     <em>single asterisks</em>
 
@@ -989,16 +995,25 @@ will produce:
 You can use whichever style you prefer; the lone restriction is that
 the same character must be used to open and close an emphasis span.
 
+你可以隨便用你喜歡的樣式，唯一的限制是，你用什麼符號開啟標籤，就要
+用什麼符號結束。
+
 Emphasis can be used in the middle of a word:
+
+強調也可以直接差在文字中間：
 
     un*frigging*believable
 
 But if you surround an `*` or `_` with spaces, it'll be treated as a
 literal asterisk or underscore.
 
+但日如果你的 `*` 和 `_` 兩邊都有空白的話，它們就只會被當成普通的符號。
+
 To produce a literal asterisk or underscore at a position where it
 would otherwise be used as an emphasis delimiter, you can backslash
 escape it:
+
+如果要在文字前後直接插入普通的星號或底線，你可以用反斜線：
 
     \*this text is surrounded by literal asterisks\*
 
