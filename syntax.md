@@ -740,18 +740,28 @@ following lines will produce a horizontal rule:
 
 Markdown supports two style of links: *inline* and *reference*.
 
+Markdown 支援兩種形式的連結語法： *行內* 和 *參考* 兩種形式。
+
 In both styles, the link text is delimited by [square brackets].
+
+不管是哪一種，連結的文字都是用 [方括號] 來標記。
 
 To create an inline link, use a set of regular parentheses immediately
 after the link text's closing square bracket. Inside the parentheses,
 put the URL where you want the link to point, along with an *optional*
 title for the link, surrounded in quotes. For example:
 
+要建立一個行內形式的連結，只要在方塊括號後面馬上接著括號並插入網址連結即可，
+如果你還想要加上連結的 title 文字，只要在網址後面，用雙引號把 title 文字
+包起來即可，例如：
+
     This is [an example](http://example.com/ "Title") inline link.
 
     [This link](http://example.net/) has no title attribute.
 
 Will produce:
+
+會產生：
 
     <p>This is <a href="http://example.com/" title="Title">
     an example</a> inline link.</p>
@@ -762,23 +772,34 @@ Will produce:
 If you're referring to a local resource on the same server, you can
 use relative paths:
 
+如果你是要連結到同樣主機的資源，你可以使用相對路徑：
+
     See my [About](/about/) page for details.   
 
 Reference-style links use a second set of square brackets, inside
 which you place a label of your choosing to identify the link:
 
+參考形式的連結使用另外一個方括號接在連結文字的括號後面，而在第二個方括號
+裡面要填入連結的辨識用的標籤：
+
     This is [an example][id] reference-style link.
 
 You can optionally use a space to separate the sets of brackets:
+
+你也可以選擇性的在兩個方括號中間加上空白：
 
     This is [an example] [id] reference-style link.
 
 Then, anywhere in the document, you define your link label like this,
 on a line by itself:
 
+接著，在文件的任意處，你可以把這個標籤的連結內容定義出來：
+
     [id]: http://example.com/  "Optional Title Here"
 
 That is:
+
+連結定義的形式為：
 
 *   Square brackets containing the link identifier (optionally
     indented from the left margin using up to three spaces);
@@ -788,7 +809,15 @@ That is:
 *   optionally followed by a title attribute for the link, enclosed
     in double or single quotes, or enclosed in parentheses.
 
+*   方括號，裡面輸入連結的辨識用標籤
+*   接著一個分號
+*   接著一個以上的空白或 tab
+*   接著連結的網址
+*   選擇性的接著 title 內容，可以用單引號、雙引號或是括弧包著
+
 The following three link definitions are equivalent:
+
+下面這三種連結的定義都是相同：
 
 	[foo]: http://example.com/  "Optional Title Here"
 	[foo]: http://example.com/  'Optional Title Here'
@@ -797,12 +826,20 @@ The following three link definitions are equivalent:
 **Note:** There is a known bug in Markdown.pl 1.0.1 which prevents
 single quotes from being used to delimit link titles.
 
+**Note:** 有一個已知的問題是 Markdown.pl 1.0.1 會忽略單引號包起來的
+連結 title。
+
 The link URL may, optionally, be surrounded by angle brackets:
+
+連結網址也可以用角括號包起來：
 
     [id]: <http://example.com/>  "Optional Title Here"
 
 You can put the title attribute on the next line and use extra spaces
 or tabs for padding, which tends to look better with longer URLs:
+
+你也可以把 title 屬性放到下一行，也可以加一些縮排，網址太長的話，這樣
+會比較好看：
 
     [id]: http://example.com/longish/path/to/resource/here
         "Optional Title Here"
@@ -810,9 +847,14 @@ or tabs for padding, which tends to look better with longer URLs:
 Link definitions are only used for creating links during Markdown
 processing, and are stripped from your document in the HTML output.
 
+網址定義只有在產生連結的時候用到，並不會直接出現在文件之中。
+
 Link definition names may consist of letters, numbers, spaces, and
 punctuation -- but they are *not* case sensitive. E.g. these two
 links:
+
+連結辨識標籤可以有字母、數字、空白和標點符號，但是並 *不* 分大小寫，
+因此下面兩個連結是一樣的：
 
 	[link text][a]
 	[link text][A]
@@ -824,18 +866,28 @@ link, in which case the link text itself is used as the name.
 Just use an empty set of square brackets -- e.g., to link the word
 "Google" to the google.com web site, you could simply write:
 
+*預設的連結標籤* 功能讓你可以省略指定連結標籤，這種情形下，連結標籤
+和連結文字會視為相同，要用預設連結標籤只要在連結文字後面加上一個空的
+角括號，如果你要讓 "Google" 連結到 google.com，你可以簡化成：
+
 	[Google][]
 
 And then define the link:
+
+然後定義連結內容：
 
 	[Google]: http://google.com/
 
 Because link names may contain spaces, this shortcut even works for
 multiple words in the link text:
 
+由於連結文字可能包含空白，所以這種簡化的標籤內也可以包含多個文字：
+
 	Visit [Daring Fireball][] for more information.
 
 And then define the link:
+
+然後接著定義連結：
 	
 	[Daring Fireball]: http://daringfireball.net/
 
@@ -844,7 +896,12 @@ tend to put them immediately after each paragraph in which they're
 used, but if you want, you can put them all at the end of your
 document, sort of like footnotes.
 
+連結的定義可以放在文件中的任何一個地方，我比較偏好直接放在連結出現
+段落的後面，你也可以把它放在文件最後面，就像是註解一樣。
+
 Here's an example of reference links in action:
+
+下面是一個參考式連結的範例：
 
     I get 10 times more traffic from [Google] [1] than from
     [Yahoo] [2] or [MSN] [3].
@@ -855,6 +912,8 @@ Here's an example of reference links in action:
 
 Using the implicit link name shortcut, you could instead write:
 
+如果改成用連結名稱的方式寫：
+
     I get 10 times more traffic from [Google][] than from
     [Yahoo][] or [MSN][].
 
@@ -864,6 +923,8 @@ Using the implicit link name shortcut, you could instead write:
 
 Both of the above examples will produce the following HTML output:
 
+上面兩種寫法都會產生下面的 HTML。
+
     <p>I get 10 times more traffic from <a href="http://google.com/"
     title="Google">Google</a> than from
     <a href="http://search.yahoo.com/" title="Yahoo Search">Yahoo</a>
@@ -871,6 +932,8 @@ Both of the above examples will produce the following HTML output:
 
 For comparison, here is the same paragraph written using
 Markdown's inline link style:
+
+下面是用行內形式寫的同樣一段內容的 markdown 文件，提供作為比較之用：
 
     I get 10 times more traffic from [Google](http://google.com/ "Google")
     than from [Yahoo](http://search.yahoo.com/ "Yahoo Search") or
@@ -884,12 +947,19 @@ long; with inline-style links, it's 176 characters; and as raw HTML,
 it's 234 characters. In the raw HTML, there's more markup than there
 is text.
 
+參考式的連結其實重點不在於它比較好寫，而是它比較好讀，比較一下上面的範例，
+使用參考式的文章本身只有 81 個字元，但是用行內形式的連結卻會增加到 176 個字元，
+如果是用純 HTML 格式來寫，會有 234 個字元，在 HTML 格式中，標籤比文字還要多。
+
 With Markdown's reference-style links, a source document much more
 closely resembles the final output, as rendered in a browser. By
 allowing you to move the markup-related metadata out of the paragraph,
 you can add links without interrupting the narrative flow of your
 prose.
 
+使用 Markdown 的參考式連結，可以讓文件更像是瀏覽器最後產生的結果，
+讓你可以把一些標記相關的資訊移到段落文字之外，你就可以增加連結而不
+讓文章的閱讀感覺被打斷。
 
 <h3 id="em">Emphasis</h3>
 
@@ -897,6 +967,10 @@ Markdown treats asterisks (`*`) and underscores (`_`) as indicators of
 emphasis. Text wrapped with one `*` or `_` will be wrapped with an
 HTML `<em>` tag; double `*`'s or `_`'s will be wrapped with an HTML
 `<strong>` tag. E.g., this input:
+
+Markdown 使用星號 (`*`) 和底線 (`_`) 作為標記強調字詞的符號，被 `*` 或
+`_` 包圍的字詞會被轉成用 `<em>` 標籤包圍，用兩個 `*` 或 `_` 包起來的話，
+則會被轉成 `<strong>` ，例如：
 
     *single asterisks*
 
@@ -907,6 +981,8 @@ HTML `<em>` tag; double `*`'s or `_`'s will be wrapped with an HTML
     __double underscores__
 
 will produce:
+
+會轉成：
 
     <em>single asterisks</em>
 
@@ -919,16 +995,25 @@ will produce:
 You can use whichever style you prefer; the lone restriction is that
 the same character must be used to open and close an emphasis span.
 
+你可以隨便用你喜歡的樣式，唯一的限制是，你用什麼符號開啟標籤，就要
+用什麼符號結束。
+
 Emphasis can be used in the middle of a word:
+
+強調也可以直接差在文字中間：
 
     un*frigging*believable
 
 But if you surround an `*` or `_` with spaces, it'll be treated as a
 literal asterisk or underscore.
 
+但日如果你的 `*` 和 `_` 兩邊都有空白的話，它們就只會被當成普通的符號。
+
 To produce a literal asterisk or underscore at a position where it
 would otherwise be used as an emphasis delimiter, you can backslash
 escape it:
+
+如果要在文字前後直接插入普通的星號或底線，你可以用反斜線：
 
     \*this text is surrounded by literal asterisks\*
 
@@ -940,18 +1025,26 @@ To indicate a span of code, wrap it with backtick quotes (`` ` ``).
 Unlike a pre-formatted code block, a code span indicates code within a
 normal paragraph. For example:
 
+如果要標記一小段行內程式碼，你可以用反引號把它包起來 (`` ` ``)，例如：
+
     Use the `printf()` function.
 
 will produce:
+
+會產生：
 
     <p>Use the <code>printf()</code> function.</p>
 
 To include a literal backtick character within a code span, you can use
 multiple backticks as the opening and closing delimiters:
 
+如果要在程式碼區段內插入反引號，你可以用多個反引號來開啟和結束程式碼區段：
+
     ``There is a literal backtick (`) here.``
 
 which will produce this:
+
+這段語法會產生：
 
     <p><code>There is a literal backtick (`) here.</code></p>
 
@@ -959,11 +1052,16 @@ The backtick delimiters surrounding a code span may include spaces --
 one after the opening, one before the closing. This allows you to place
 literal backtick characters at the beginning or end of a code span:
 
+程式碼區段的起始和結束端都可以放入一個空白，起始端後面一個，結束端前面一個，
+這樣你就可以在區段的一開始就插入反引號：
+
 	A single backtick in a code span: `` ` ``
 	
 	A backtick-delimited string in a code span: `` `foo` ``
 
 will produce:
+
+會產生：
 
 	<p>A single backtick in a code span: <code>`</code></p>
 	
@@ -973,17 +1071,26 @@ With a code span, ampersands and angle brackets are encoded as HTML
 entities automatically, which makes it easy to include example HTML
 tags. Markdown will turn this:
 
+在程式碼區段內， `&` 和角括號都會被轉成 HTML 實體，這樣會比較容易插入 HTML 原始碼，
+Markdown 會把下面這段：
+
     Please don't use any `<blink>` tags.
 
 into:
+
+轉為：
 
     <p>Please don't use any <code>&lt;blink&gt;</code> tags.</p>
 
 You can write this:
 
+你也可以這樣寫：
+
     `&#8212;` is the decimal-encoded equivalent of `&mdash;`.
 
 to produce:
+
+以產生：
 
     <p><code>&amp;#8212;</code> is the decimal-encoded
     equivalent of <code>&amp;mdash;</code>.</p>
@@ -995,16 +1102,24 @@ to produce:
 Admittedly, it's fairly difficult to devise a "natural" syntax for
 placing images into a plain text document format.
 
+很明顯的，要設計一個 "自然" 的語法來在文字中插入圖片是很有難度的。
+
 Markdown uses an image syntax that is intended to resemble the syntax
 for links, allowing for two styles: *inline* and *reference*.
 
+Markdown 使用一種和連結很像的語法來標記圖片，同樣也允許兩種樣式： *行內* 和 *參考* 。
+
 Inline image syntax looks like this:
+
+行內圖片的語法看起來像是：
 
     ![Alt text](/path/to/img.jpg)
 
     ![Alt text](/path/to/img.jpg "Optional title")
 
 That is:
+
+詳細敘述如下：
 
 *   An exclamation mark: `!`;
 *   followed by a set of square brackets, containing the `alt`
@@ -1013,18 +1128,30 @@ That is:
     the image, and an optional `title` attribute enclosed in double
     or single quotes.
 
+*   一個驚嘆號 `!`
+*   接著一個角括號，裡面放上圖片的替代文字
+*   接著一個普通括號，裡面放上圖片的網址，最後還可以用引號包住並加上
+    選擇性的 'title' 文字。
+
 Reference-style image syntax looks like this:
+
+參考式的圖片語法則長得像這樣：
 
     ![Alt text][id]
 
 Where "id" is the name of a defined image reference. Image references
 are defined using syntax identical to link references:
 
+"id" 是圖片參考的名稱，圖片參考的定義方式則和連結參考一樣：
+
     [id]: url/to/image  "Optional title attribute"
 
 As of this writing, Markdown has no syntax for specifying the
 dimensions of an image; if this is important to you, you can simply
 use regular HTML `<img>` tags.
+
+到目前為止， Markdown 還沒有辦法指定圖片的寬高，如果你需要的話，
+你可以使用普通的 `<img>` 標籤。
 
 
 * * *
@@ -1036,9 +1163,15 @@ use regular HTML `<img>` tags.
 
 Markdown supports a shortcut style for creating "automatic" links for URLs and email addresses: simply surround the URL or email address with angle brackets. What this means is that if you want to show the actual text of a URL or email address, and also have it be a clickable link, you can do this:
 
+Markdown 支援比較簡短的自動連結形式來處理網址和電子郵件信箱，
+只要是用角括號包起來， Markdown 就會自動把它轉成連結，連結的文字
+就和連結位置一樣，例如：
+
     <http://example.com/>
     
 Markdown will turn this into:
+
+Markdown 會轉為：
 
     <a href="http://example.com/">http://example.com/</a>
 
@@ -1047,9 +1180,15 @@ Markdown will also perform a bit of randomized decimal and hex
 entity-encoding to help obscure your address from address-harvesting
 spambots. For example, Markdown will turn this:
 
+自動的郵件連結也很類似，只是 Markdown 會先做一個編碼轉換的過程，
+把文字字元轉成16進位碼的 HTML 實體，這樣的格式可以混淆一些不好的
+信箱位置收集機器人，例如：
+
     <address@example.com>
 
 into something like this:
+
+Markdown 會轉成：
 
     <a href="&#x6D;&#x61;i&#x6C;&#x74;&#x6F;:&#x61;&#x64;&#x64;&#x72;&#x65;
     &#115;&#115;&#64;&#101;&#120;&#x61;&#109;&#x70;&#x6C;e&#x2E;&#99;&#111;
@@ -1058,12 +1197,15 @@ into something like this:
 
 which will render in a browser as a clickable link to "address@example.com".
 
+在瀏覽器裡面，這段字串會變成一個可以點擊的 "address@example.com" 連結。
+
 (This sort of entity-encoding trick will indeed fool many, if not
 most, address-harvesting bots, but it definitely won't fool all of
 them. It's better than nothing, but an address published in this way
 will probably eventually start receiving spam.)
 
-
+（這種作法雖然可以混淆不少的機器人，但並不是全部，不過這樣也比什麼都不做還好
+不管如何，公開你的信箱終究是會引來廣告信件的。）
 
 <h3 id="backslash">Backslash Escapes</h3>
 
@@ -1072,6 +1214,11 @@ characters which would otherwise have special meaning in Markdown's
 formatting syntax. For example, if you wanted to surround a word
 with literal asterisks (instead of an HTML `<em>` tag), you can use
 backslashes before the asterisks, like this:
+
+Markdown 可以利用反斜線來插入一些在語法中有其他意義的符號，例如：
+如果你想要用星號加在文字旁邊的方式來做出強調效果（但是不是用 `<em>` 標籤），
+你可以在星號的前面加上反斜線：
+
 
     \*literal asterisks\*
 
@@ -1090,6 +1237,8 @@ Markdown provides backslash escapes for the following characters:
     .   dot
     !   exclamation mark
 
+Markdown 支援在下面這些符號前面加上反斜線來幫助插入普通的符號：
+
     \   反斜線
     `   反引號
     *   星號
@@ -1100,6 +1249,6 @@ Markdown provides backslash escapes for the following characters:
     #   井字號
 	+	加號
 	-	減號
-    .   英文句點Ddot
+    .   英文句點
     !   驚嘆號
 
