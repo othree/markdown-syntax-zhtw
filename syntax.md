@@ -1163,9 +1163,15 @@ use regular HTML `<img>` tags.
 
 Markdown supports a shortcut style for creating "automatic" links for URLs and email addresses: simply surround the URL or email address with angle brackets. What this means is that if you want to show the actual text of a URL or email address, and also have it be a clickable link, you can do this:
 
+Markdown 支援比較簡短的自動連結形式來處理網址和電子郵件信箱，
+只要是用角括號包起來， Markdown 就會自動把它轉成連結，連結的文字
+就和連結位置一樣，例如：
+
     <http://example.com/>
     
 Markdown will turn this into:
+
+Markdown 會轉為：
 
     <a href="http://example.com/">http://example.com/</a>
 
@@ -1174,9 +1180,15 @@ Markdown will also perform a bit of randomized decimal and hex
 entity-encoding to help obscure your address from address-harvesting
 spambots. For example, Markdown will turn this:
 
+自動的郵件連結也很類似，只是 Markdown 會先做一個編碼轉換的過程，
+把文字字元轉成16進位碼的 HTML 實體，這樣的格式可以混淆一些不好的
+信箱位置收集機器人，例如：
+
     <address@example.com>
 
 into something like this:
+
+Markdown 會轉成：
 
     <a href="&#x6D;&#x61;i&#x6C;&#x74;&#x6F;:&#x61;&#x64;&#x64;&#x72;&#x65;
     &#115;&#115;&#64;&#101;&#120;&#x61;&#109;&#x70;&#x6C;e&#x2E;&#99;&#111;
@@ -1185,12 +1197,15 @@ into something like this:
 
 which will render in a browser as a clickable link to "address@example.com".
 
+在瀏覽器裡面，這段字串會變成一個可以點擊的 "address@example.com" 連結。
+
 (This sort of entity-encoding trick will indeed fool many, if not
 most, address-harvesting bots, but it definitely won't fool all of
 them. It's better than nothing, but an address published in this way
 will probably eventually start receiving spam.)
 
-
+（這種作法雖然可以混淆不少的機器人，但並不是全部，不過這樣也比什麼都不做還好
+不管如何，公開你的信箱終究是會引來廣告信件的。）
 
 <h3 id="backslash">Backslash Escapes</h3>
 
