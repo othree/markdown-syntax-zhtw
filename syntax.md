@@ -1102,16 +1102,24 @@ to produce:
 Admittedly, it's fairly difficult to devise a "natural" syntax for
 placing images into a plain text document format.
 
+很明顯的，要設計一個 "自然" 的語法來在文字中插入圖片是很有難度的。
+
 Markdown uses an image syntax that is intended to resemble the syntax
 for links, allowing for two styles: *inline* and *reference*.
 
+Markdown 使用一種和連結很像的語法來標記圖片，同樣也允許兩種樣式： *行內* 和 *參考* 。
+
 Inline image syntax looks like this:
+
+行內圖片的語法看起來像是：
 
     ![Alt text](/path/to/img.jpg)
 
     ![Alt text](/path/to/img.jpg "Optional title")
 
 That is:
+
+詳細敘述如下：
 
 *   An exclamation mark: `!`;
 *   followed by a set of square brackets, containing the `alt`
@@ -1120,18 +1128,30 @@ That is:
     the image, and an optional `title` attribute enclosed in double
     or single quotes.
 
+*   一個驚嘆號 `!`
+*   接著一個角括號，裡面放上圖片的替代文字
+*   接著一個普通括號，裡面放上圖片的網址，最後還可以用引號包住並加上
+    選擇性的 'title' 文字。
+
 Reference-style image syntax looks like this:
+
+參考式的圖片語法則長得像這樣：
 
     ![Alt text][id]
 
 Where "id" is the name of a defined image reference. Image references
 are defined using syntax identical to link references:
 
+"id" 是圖片參考的名稱，圖片參考的定義方式則和連結參考一樣：
+
     [id]: url/to/image  "Optional title attribute"
 
 As of this writing, Markdown has no syntax for specifying the
 dimensions of an image; if this is important to you, you can simply
 use regular HTML `<img>` tags.
+
+到目前為止， Markdown 還沒有辦法指定圖片的寬高，如果你需要的話，
+你可以使用普通的 `<img>` 標籤。
 
 
 * * *
