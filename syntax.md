@@ -896,7 +896,12 @@ tend to put them immediately after each paragraph in which they're
 used, but if you want, you can put them all at the end of your
 document, sort of like footnotes.
 
+連結的定義可以放在文件中的任何一個地方，我比較偏好直接放在連結出現
+段落的後面，你也可以把它放在文件最後面，就像是註解一樣。
+
 Here's an example of reference links in action:
+
+下面是一個參考式連結的範例：
 
     I get 10 times more traffic from [Google] [1] than from
     [Yahoo] [2] or [MSN] [3].
@@ -907,6 +912,8 @@ Here's an example of reference links in action:
 
 Using the implicit link name shortcut, you could instead write:
 
+如果改成用連結名稱的方式寫：
+
     I get 10 times more traffic from [Google][] than from
     [Yahoo][] or [MSN][].
 
@@ -916,6 +923,8 @@ Using the implicit link name shortcut, you could instead write:
 
 Both of the above examples will produce the following HTML output:
 
+上面兩種寫法都會產生下面的 HTML。
+
     <p>I get 10 times more traffic from <a href="http://google.com/"
     title="Google">Google</a> than from
     <a href="http://search.yahoo.com/" title="Yahoo Search">Yahoo</a>
@@ -923,6 +932,8 @@ Both of the above examples will produce the following HTML output:
 
 For comparison, here is the same paragraph written using
 Markdown's inline link style:
+
+下面是用行內形式寫的同樣一段內容的 markdown 文件，提供作為比較之用：
 
     I get 10 times more traffic from [Google](http://google.com/ "Google")
     than from [Yahoo](http://search.yahoo.com/ "Yahoo Search") or
@@ -936,12 +947,19 @@ long; with inline-style links, it's 176 characters; and as raw HTML,
 it's 234 characters. In the raw HTML, there's more markup than there
 is text.
 
+參考式的連結其實重點不在於它比較好寫，而是它比較好讀，比較一下上面的範例，
+使用參考式的文章本身只有 81 個字元，但是用行內形式的連結卻會增加到 176 個字元，
+如果是用純 HTML 格式來寫，會有 234 個字元，在 HTML 格式中，標籤比文字還要多。
+
 With Markdown's reference-style links, a source document much more
 closely resembles the final output, as rendered in a browser. By
 allowing you to move the markup-related metadata out of the paragraph,
 you can add links without interrupting the narrative flow of your
 prose.
 
+使用 Markdown 的參考式連結，可以讓文件更像是瀏覽器最後產生的結果，
+讓你可以把一些標記相關的資訊移到段落文字之外，你就可以增加連結而不
+讓文章的閱讀感覺被打斷。
 
 <h3 id="em">Emphasis</h3>
 
