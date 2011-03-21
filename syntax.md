@@ -1025,18 +1025,26 @@ To indicate a span of code, wrap it with backtick quotes (`` ` ``).
 Unlike a pre-formatted code block, a code span indicates code within a
 normal paragraph. For example:
 
+如果要標記一小段行內程式碼，你可以用反引號把它包起來 (`` ` ``)，例如：
+
     Use the `printf()` function.
 
 will produce:
+
+會產生：
 
     <p>Use the <code>printf()</code> function.</p>
 
 To include a literal backtick character within a code span, you can use
 multiple backticks as the opening and closing delimiters:
 
+如果要在程式碼區段內插入反引號，你可以用多個反引號來開啟和結束程式碼區段：
+
     ``There is a literal backtick (`) here.``
 
 which will produce this:
+
+這段語法會產生：
 
     <p><code>There is a literal backtick (`) here.</code></p>
 
@@ -1044,11 +1052,16 @@ The backtick delimiters surrounding a code span may include spaces --
 one after the opening, one before the closing. This allows you to place
 literal backtick characters at the beginning or end of a code span:
 
+程式碼區段的起始和結束端都可以放入一個空白，起始端後面一個，結束端前面一個，
+這樣你就可以在區段的一開始就插入反引號：
+
 	A single backtick in a code span: `` ` ``
 	
 	A backtick-delimited string in a code span: `` `foo` ``
 
 will produce:
+
+會產生：
 
 	<p>A single backtick in a code span: <code>`</code></p>
 	
@@ -1058,17 +1071,26 @@ With a code span, ampersands and angle brackets are encoded as HTML
 entities automatically, which makes it easy to include example HTML
 tags. Markdown will turn this:
 
+在程式碼區段內， `&` 和角括號都會被轉成 HTML 實體，這樣會比較容易插入 HTML 原始碼，
+Markdown 會把下面這段：
+
     Please don't use any `<blink>` tags.
 
 into:
+
+轉為：
 
     <p>Please don't use any <code>&lt;blink&gt;</code> tags.</p>
 
 You can write this:
 
+你也可以這樣寫：
+
     `&#8212;` is the decimal-encoded equivalent of `&mdash;`.
 
 to produce:
+
+以產生：
 
     <p><code>&amp;#8212;</code> is the decimal-encoded
     equivalent of <code>&amp;mdash;</code>.</p>
