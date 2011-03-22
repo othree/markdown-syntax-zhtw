@@ -11,16 +11,25 @@ looking at a few examples of it in action. The examples on this page
 are written in a before/after style, showing example syntax and the
 HTML output produced by Markdown.
 
+這頁提供了 Markdown 簡單的概觀給想使用的人， [語法說明][s] 頁提供了
+完整詳細的文件，說明每項功能，但是 Markdown 其實很簡單就可以上手，
+這頁文件提供了一些範例，並且每個範例都有提供輸出的 HTML 結果。
+
 It's also helpful to simply try Markdown out; the [Dingus] [d] is a
 web application that allows you type your own Markdown-formatted text
 and translate it to XHTML.
 
+其實直接試試看也是一個很不錯的方法， [Dingus][d] 是一個網頁應用程式，
+讓你可以把你的 Markdown 文件轉成 XHTML。
+
 **Note:** This document is itself written using Markdown; you
 can [see the source for it by adding '.text' to the URL] [src].
 
-  [s]: /projects/markdown/syntax  "Markdown Syntax"
-  [d]: /projects/markdown/dingus  "Markdown Dingus"
-  [src]: /projects/markdown/basics.text
+**Note:** 這份文件本身也是用 Markdown 寫的，你也可以看看 [它的原始碼][src]
+
+  [s]: http://markdown.tw  "Markdown Syntax"
+  [d]: http://daringfireball.net/projects/markdown/dingus  "Markdown Dingus"
+  [src]: https://github.com/othree/markdown-syntax-zhtw/blob/master/basics.md
 
 
 ## Paragraphs, Headers, Blockquotes ##
