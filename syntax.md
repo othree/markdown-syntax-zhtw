@@ -260,7 +260,7 @@ by one or more blank lines. (A blank line is any line that looks like a
 blank line -- a line containing nothing but spaces or tabs is considered
 blank.) Normal paragraphs should not be indented with spaces or tabs.
 
-一個段落是由一個或以上的連接的行句組成，而兩個以上的空行則會切分出不同的段落
+一個段落是由一個以上的連接的行句組成，而一個以上的空行則會切分出不同的段落
 （空行的定義是顯示上看起來像是空行，就被視為空行，例如有一行只有空白和 tab，
 那該行也會被視為空行），一般的段落不需要用空白或斷行縮排。
 

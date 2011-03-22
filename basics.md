@@ -40,6 +40,10 @@ a blank line -- a line containing nothing but spaces or tabs is
 considered blank.) Normal paragraphs should not be indented with
 spaces or tabs.
 
+一個段落是由一個以上的連接的行句組成，而一個以上的空行則會切分出不同的段落
+（空行的定義是顯示上看起來像是空行，就被視為空行，例如有一行只有空白和 tab，
+那該行也會被視為空行），一般的段落不需要用空白或斷行縮排。
+
 Markdown offers two styles of headers: *Setext* and *atx*.
 Setext-style headers for `<h1>` and `<h2>` are created by
 "underlining" with equal signs (`=`) and hyphens (`-`), respectively.
@@ -47,7 +51,13 @@ To create an atx-style header, you put 1-6 hash marks (`#`) at the
 beginning of the line -- the number of hashes equals the resulting
 HTML header level.
 
+Markdown 支援兩種標題的語法，[Setext] [1] 和 [atx] [2] 形式。
+Setext 形式是用底線的形式，利用 `=` （最高階標題）和 `-` （第二階標題），
+Atx 形式在行首插入 1 到 6 個 `#` ，對應到標題 1 到 6 階。
+
 Blockquotes are indicated using email-style '`>`' angle brackets.
+
+區塊引言則使用 email 形式的 '`>`' 角括號。
 
 Markdown:
 
@@ -74,6 +84,8 @@ Markdown:
 
 
 Output:
+
+輸出：
 
     <h1>A First Level Header</h1>
     
@@ -102,6 +114,8 @@ Output:
 
 Markdown uses asterisks and underscores to indicate spans of emphasis.
 
+Markdown 使用星號和底線來標記需要強調的區段。
+
 Markdown:
 
     Some of these words *are emphasized*.
@@ -126,11 +140,16 @@ Unordered (bulleted) lists use asterisks, pluses, and hyphens (`*`,
 `+`, and `-`) as list markers. These three markers are
 interchangable; this:
 
+無序清單使用星號、加號和減號來做為清單的項目標記，這些符號是都可以使用的，
+使用星號：
+
     *   Candy.
     *   Gum.
     *   Booze.
 
 this:
+
+加號：
 
     +   Candy.
     +   Gum.
@@ -138,11 +157,15 @@ this:
 
 and this:
 
+和減號
+
     -   Candy.
     -   Gum.
     -   Booze.
 
 all produce the same output:
+
+都會輸出：
 
     <ul>
     <li>Candy.</li>
@@ -152,6 +175,8 @@ all produce the same output:
 
 Ordered (numbered) lists use regular numbers, followed by periods, as
 list markers:
+
+有序的清單則是使用一般的數字接著一個英文句點作為項目標記：
 
     1.  Red
     2.  Green
@@ -168,6 +193,9 @@ Output:
 If you put blank lines between items, you'll get `<p>` tags for the
 list item text. You can create multi-paragraph list items by indenting
 the paragraphs by 4 spaces or 1 tab:
+
+如果你在項目之間插入空行，那項目的內容會備用 `<p>` 包起來，你也可以在一個項目
+內放上多個段落，只要在它前面縮排 4 個空白或 1 個 tab 。
 
     *   A list item.
     
