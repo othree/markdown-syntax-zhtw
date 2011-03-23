@@ -219,8 +219,13 @@ Markdown supports two styles for creating links: *inline* and
 *reference*. With both styles, you use square brackets to delimit the
 text you want to turn into a link.
 
+Markdown 支援兩種形式的連結語法： *行內* 和 *參考* 兩種形式，兩種都是使用角括號
+來把文字轉成連結。
+
 Inline-style links use parentheses immediately after the link text.
 For example:
+
+行內形式形式是直接在後面用括號直接接上連結：
 
     This is an [example link](http://example.com/).
 
@@ -231,6 +236,8 @@ Output:
 
 Optionally, you may include a title attribute in the parentheses:
 
+你也可以選擇性的加上 title 屬性：
+
     This is an [example link](http://example.com/ "With a Title").
 
 Output:
@@ -240,6 +247,8 @@ Output:
 
 Reference-style links allow you to refer to your links by names, which
 you define elsewhere in your document:
+
+參考形式的連結讓你可以為連結定一個名稱，之後你可以在文件的其他地方定義該連結的內容：
 
     I get 10 times more traffic from [Google][1] than from
     [Yahoo][2] or [MSN][3].
@@ -258,6 +267,8 @@ Output:
 The title attribute is optional. Link names may contain letters,
 numbers and spaces, but are *not* case sensitive:
 
+title 屬性是選擇性的，連結名稱可以用字母、數字和空格，但是不分大小寫：
+
     I start my morning with a cup of coffee and
     [The New York Times][NY Times].
 
@@ -273,17 +284,25 @@ Output:
 
 Image syntax is very much like link syntax.
 
+圖片的語法和連結很像。
+
 Inline (titles are optional):
+
+行內形式（title 是選擇性的）：
 
     ![alt text](/path/to/img.jpg "Title")
 
 Reference-style:
+
+參考形式：
 
     ![alt text][id]
 
     [id]: /path/to/img.jpg "Title"
 
 Both of the above examples produce the same output:
+
+上面兩種方法都會輸出：
 
     <img src="/path/to/img.jpg" alt="alt text" title="Title" />
 
@@ -296,12 +315,18 @@ backtick quotes. Any ampersands (`&`) and angle brackets (`<` or
 `>`) will automatically be translated into HTML entities. This makes
 it easy to use Markdown to write about HTML example code:
 
+在一般的段落文字中，你可以使用反引號 `` ` `` 來標記程式碼區段，區段內的 `&`
+、`<` 和 `>` 都會被自動的轉換成 HTML 實體，這項特性讓你可以很容易的在程式碼
+區段內插入 HTML 碼：
+
     I strongly recommend against using any `<blink>` tags.
 
     I wish SmartyPants used named entities like `&mdash;`
     instead of decimal-encoded entites like `&#8212;`.
 
 Output:
+
+輸出：
 
     <p>I strongly recommend against using any
     <code>&lt;blink&gt;</code> tags.</p>
@@ -314,6 +339,9 @@ Output:
 To specify an entire block of pre-formatted code, indent every line of
 the block by 4 spaces or 1 tab. Just like with code spans, `&`, `<`,
 and `>` characters will be escaped automatically.
+
+如果要建立一個已經格式化好的程式碼區塊，只要每行都縮排 4 個空格或是一個 tab 
+就可以了，而 `&`、`<` 和 `>` 也一樣會自動轉成 HTML 實體。
 
 Markdown:
 
