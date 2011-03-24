@@ -64,7 +64,7 @@ Document. Please refer to <a href="http://daringfireball.net/projects/markdown/s
 
 <p>為了這個目的，Markdown 的語法全部由標點符號來組成，標點符號的選擇是依
 據他們看起來樣子或是他們的意義慎重的考慮的，像是在文字兩旁加上星號，看
-起來就很像在 *強調* 。Markdow 的清單就很像是清單，區塊引研究很像是電
+起來就很像在 *強調* 。Markdow 的清單就很像是清單，區塊引言就很像是電
 子郵件的引言。</p>
 
 <h3 id="html">行內 HTML</h3>
@@ -72,8 +72,8 @@ Document. Please refer to <a href="http://daringfireball.net/projects/markdown/s
 <p>Markdown 的語法有個主要的目的：用來作為一種網路內容的 <em>寫作</em> 用語言。</p>
 
 <p>Markdown 不是要來取代 HTML，甚至也沒有要和它相似，它的語法種類不多，
-只和 HTML 的一部分有關係，重點 <em>不是</em> 要創造一種更容易插入 HTML 標籤
-的語法，我認為 HTML 已經很容易插入了，Markdown 的重點在讓文件更容易
+只和 HTML 的一部分有關係，重點 <em>不是</em> 要創造一種更容易寫作 HTML 文件
+的語法，我認為 HTML 已經很容易寫了，Markdown 的重點在讓文件更容易
 閱讀、編寫，HTML 是一種 <em>發佈</em> 的格式，Markdown 是一種 <em>編寫</em> 的格式，
 因此，Markdown 的格式語法只涵蓋純文字可以涵蓋的範圍。</p>
 
@@ -101,13 +101,13 @@ This is another regular paragraph.
 <p>請注意，在 HTML 區塊標籤內，是不會對 Markdown 的語法進行處理的。例如，
 HTML 區塊內，無法使用 Markdown 形式的 <code>*強調*</code></p>
 
-<p>HTML 的跨度標間如 <code>&lt;span&gt;</code>, <code>&lt;cite&gt;</code> 或者 <code>&lt;del&gt;</code> 則不受限制，可以在
-Markdown 的段落、清單或是檔頭裡任意使用。依照個人習慣，甚至可以不用
+<p>HTML 的區段標間如 <code>&lt;span&gt;</code>, <code>&lt;cite&gt;</code> 或者 <code>&lt;del&gt;</code> 則不受限制，可以在
+Markdown 的段落、清單或是標題裡任意使用。依照個人習慣，甚至可以不用
 Markdown 格式，而採用 HTML 標籤來格式化。舉例說明：如果比較喜歡 HTML
 的  <code>&lt;a&gt;</code> 或 <code>&lt;img&gt;</code> 標籤，可以直接使用這些標籤，而不用 Markdown 提
 供的連結或是影像標示語法。</p>
 
-<p>HTML 跨度標籤和區塊標籤不同，在跨度標籤的範圍內， Markdown 的語法是有效的。</p>
+<p>HTML 區段標籤和區塊標籤不同，在區段標籤的範圍內， Markdown 的語法是有效的。</p>
 
 <h3 id="autoescape">特殊字元自動轉換</h3>
 
@@ -116,7 +116,7 @@ Markdown 格式，而採用 HTML 標籤來格式化。舉例說明：如果比�
 使用實體的形式，像是 <code>&amp;lt;</code> 和 <code>&amp;amp;</code>。</p>
 
 <p><code>&amp;</code> 符號其實很讓寫作網路文件的人很困擾，如果你要打 'AT&amp;T' ，你必須要寫成
-'<code>AAT&amp;amp;T</code>' ，你還必須要轉換網址內的 <code>&amp;</code> 符號，如果你要連結到：</p>
+'<code>AT&amp;amp;T</code>' ，你還必須要轉換網址內的 <code>&amp;</code> 符號，如果你要連結到：</p>
 
 <pre><code>http://images.google.com/images?num=30&amp;q=larry+bird
 </code></pre>
@@ -126,8 +126,8 @@ Markdown 格式，而採用 HTML 標籤來格式化。舉例說明：如果比�
 <pre><code>http://images.google.com/images?num=30&amp;amp;q=larry+bird
 </code></pre>
 
-<p>才能放到你的連結標籤的 <code>href</code> 裡，不用說，這很容易忘記，可能是最大的
-HTML 標準檢查的錯誤來源。</p>
+<p>才能放到你的連結標籤的 <code>href</code> 裡，不用說也知道這很容易忘記，這也可能是數量最多的
+HTML 標準檢查的錯誤。</p>
 
 <p>Markdown 允許你直接使用這些符號，但是你要小心跳脫字元的使用，如果你是在
 HTML 實體中使用 <code>&amp;</code> 符號的話，它不會被轉換，而在其它情形下，它則會被轉換
@@ -148,7 +148,7 @@ HTML 實體中使用 <code>&amp;</code> 符號的話，它不會被轉換，而�
 <pre><code>AT&amp;amp;T
 </code></pre>
 
-<p>類似的狀況也會發生在 <code>&lt;</code> 符號上，因為 Markdown 支援 <a href="#html">inline HTML</a> ，
+<p>類似的狀況也會發生在 <code>&lt;</code> 符號上，因為 Markdown 支援 <a href="#html">行內 HTML</a> ，
 如果你是使用 <code>&lt;</code> 符號作為 HTML 標籤使用，那 Markdown 也不會對它做任何轉換，
 但是如果你是寫：</p>
 
@@ -163,7 +163,7 @@ HTML 實體中使用 <code>&amp;</code> 符號的話，它不會被轉換，而�
 <p>不過要注意的是，code 範圍內，不論是行內還是區塊， <code>&lt;</code> 和 <code>&amp;</code> 兩個符號都 <em>一定</em>
 會被轉換成 HTML 實體，這項特性讓你可以很容易的用 Markdown 寫 HTML code 
 （和 HTML 相對而言， HTML 語法中，你要把所有的 <code>&lt;</code> 和 <code>&amp;</code> 都轉換為 HTML 實體，
-你才能再 HTML 文件裡面寫出 HTML code）</p>
+你才能在 HTML 文件裡面寫出 HTML code）</p>
 
 <hr />
 
@@ -171,11 +171,11 @@ HTML 實體中使用 <code>&amp;</code> 符號的話，它不會被轉換，而�
 
 <h3 id="p">段落和換行</h3>
 
-<p>一個段落是由一個以上的連接的行句組成，而一個以上的空行則會切分出不同的段落
+<p>一個段落是由一個以上連接的行句組成，而一個以上的空行則會切分出不同的段落
 （空行的定義是顯示上看起來像是空行，就被視為空行，例如有一行只有空白和 tab，
 那該行也會被視為空行），一般的段落不需要用空白或斷行縮排。</p>
 
-<p>「一個或以上的連接的行句組成」這句其實暗示了 Markdow 允許段落內的強迫斷行，
+<p>「一個以上連接的行句組成」這句其實暗示了 Markdow 允許段落內的強迫斷行，
 這個特性和其他大部分的 text-to-HTML 格式不一樣（包括 MovableType 的 
 "Convert Line Breaks" 選項），其它的格式會把每個斷行都轉成 <code>&lt;br /&gt;</code> 標籤。</p>
 
@@ -183,7 +183,7 @@ HTML 實體中使用 <code>&amp;</code> 符號的話，它不會被轉換，而�
 
 <p>是的，這確實讓你要花比較多功夫插入 <code>&lt;br /&gt;</code> ，但是「每個換行都轉換為 <code>&lt;br /&gt;</code>」
 的方法在 Markdown 中並不適合， Markdown 的 email 式的 <a href="#blockquote">區塊引言</a> 和多段落的
-<a href="#list">清單</a> 在使用換行來排版的時候，不但更好用，還更好看！</p>
+<a href="#list">清單</a> 在使用換行來排版的時候，不但更好用，還更好閱讀！</p>
 
 <h3 id="header">標題</h3>
 
@@ -201,7 +201,7 @@ This is an H2
 
 <p>任何數量的 <code>=</code> 和 <code>-</code> 都可以有效果。</p>
 
-<p>Atx 形式在行首插入 1 到 6 個 <code>#</code> ，對應到標題 1 到 6 階，例如：</p>
+<p>Atx 形式則是在行首插入 1 到 6 個 <code>#</code> ，對應到標題 1 到 6 階，例如：</p>
 
 <pre><code># This is an H1
 
@@ -287,7 +287,7 @@ id sem consectetuer libero luctus adipiscing.
 +   Blue
 </code></pre>
 
-<p>和：</p>
+<p>也等同於：</p>
 
 <pre><code>-   Red
 -   Green
@@ -707,7 +707,7 @@ __double underscores__
 <pre><code>un*frigging*believable
 </code></pre>
 
-<p>但日如果你的 <code>*</code> 和 <code>_</code> 兩邊都有空白的話，它們就只會被當成普通的符號。</p>
+<p>但是如果你的 <code>*</code> 和 <code>_</code> 兩邊都有空白的話，它們就只會被當成普通的符號。</p>
 
 <p>如果要在文字前後直接插入普通的星號或底線，你可以用反斜線：</p>
 
@@ -843,7 +843,7 @@ equivalent of &lt;code&gt;&amp;amp;mdash;&lt;/code&gt;.&lt;/p&gt;
 
 <p>在瀏覽器裡面，這段字串會變成一個可以點擊的 "address@example.com" 連結。</p>
 
-<p>（這種作法雖然可以混淆不少的機器人，但並不是全部，不過這樣也比什麼都不做還好
+<p>（這種作法雖然可以混淆不少的機器人，但並無法全部檔下來，不過這樣也比什麼都不做還好
 不管如何，公開你的信箱終究是會引來廣告信件的。）</p>
 
 <h3 id="backslash">跳脫字元</h3>
