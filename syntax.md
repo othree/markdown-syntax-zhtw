@@ -26,6 +26,7 @@ Markdown: Syntax
 *   [其它](#misc)
     *   [跳脫字元](#backslash)
     *   [自動連結](#autolink)
+*   [感謝](#acknowledgement)
 
 **Note:** 這份文件是用 Markdown 寫的，你可以 [看看他的原始檔][src] 。
 
@@ -786,3 +787,10 @@ Markdown 支援在下面這些符號前面加上反斜線來幫助插入普通�
     .   英文句點
     !   驚嘆號
 
+<h2 id="acknowledgement">感謝</h2>
+
+感謝 [leafy7382][] 協助翻譯， [ethantw][] 的 [漢字標準格式・CSS Reset][] 。
+
+[leafy7382]:https://twitter.com/#!/leafy7382
+[ethantw]:https://twitter.com/#!/ethantw
+[漢字標準格式・CSS Reset]:http://ethantw.net/projects/han/
