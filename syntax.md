@@ -40,7 +40,7 @@ Markdown: Syntax
 
 Markdown 的目標是實現「易讀易寫」。
 
-可讀性是最需要強調的。一份使用 Markdown 格式撰寫的文件應該可以直接以純文字發佈，並且看起來不會充斥著標籤與版面要求語法。Markdown 語法受到一些既有 text-to-HTML 格式的影響，包括 [Setext] [1]、[atx] [2]、[Textile] [3]、[reStructuredText] [4]、[Grutatext] [5] 和 [EtText] [6]，不過最大靈感來源其實是純文字的電子郵件格式。  
+不過可讀性是最需要強調的。一份使用 Markdown 格式撰寫的文件應該可以直接以純文字發佈，並且看起來不會充斥著標籤與版面要求語法。Markdown 語法受到一些既有 text-to-HTML 格式的影響，包括 [Setext] [1]、[atx] [2]、[Textile] [3]、[reStructuredText] [4]、[Grutatext] [5] 和 [EtText] [6]，然而最大靈感來源其實是純文字的電子郵件格式。
 
   [1]: http://docutils.sourceforge.net/mirror/setext.html
   [2]: http://www.aaronsw.com/2002/atx/
@@ -49,7 +49,7 @@ Markdown 的目標是實現「易讀易寫」。
   [5]: http://www.triptico.com/software/grutatxt.html
   [6]: http://ettext.taint.org/doc/
 
-為了這個目的，Markdown 的語法全部由標點符號來組成，標點符號的選擇是依據他們看起來樣子或是他們的意義慎重的考慮的，像是在文字兩旁加上星號，看起來就很像在 \*強調\* 。Markdow 的清單就很像是清單，區塊引言就很像是電子郵件的引言。
+因此 Markdown 的語法完全是由標點符號所組成，並且經過謹慎考慮，為的是看起來就像是它們所要表達的意思。像是在文字兩旁加上星號，看起來就像 \*強調\* 。Markdown 的清單看起來，嗯，就是清單。假如你有使用過電子郵件，區塊引言看起來就真的是引用一段文字。
 
 <h3 id="html">行內 HTML</h3>
 
