@@ -38,9 +38,9 @@ Markdown: Syntax
 
 <h3 id="philosophy">哲學</h3>
 
-Markdown 將容易閱讀和容易寫作這兩點作為主要目標。
+Markdown 的目標是實現「易讀易寫」。
 
-可讀性則是其中最重要的一個特點，一篇 Markdown 格式的文件應該要可以直接作為發佈用的文件，而不會讓人覺得他是使用像是邊簽語言之類的格式來編寫，Markdown 的文件格式受到很多的 text-to-HTML 格式的影響，包括 [Setext] [1]、[atx] [2]、[Textile] [3]、[reStructuredText] [4]、[Grutatext] [5] 和 [EtText] [6]，然而影響最大的其實是純文字的電子郵件。
+可讀性是最需要強調的。一份使用 Markdown 格式撰寫的文件應該可以直接以純文字發佈，並且看起來不會充斥著標籤與版面要求語法。Markdown 語法受到一些既有 text-to-HTML 格式的影響，包括 [Setext] [1]、[atx] [2]、[Textile] [3]、[reStructuredText] [4]、[Grutatext] [5] 和 [EtText] [6]，不過最大靈感來源其實是純文字的電子郵件格式。  
 
   [1]: http://docutils.sourceforge.net/mirror/setext.html
   [2]: http://www.aaronsw.com/2002/atx/
