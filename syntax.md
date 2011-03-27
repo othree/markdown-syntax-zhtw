@@ -28,7 +28,7 @@ Markdown: Syntax
     *   [自動連結](#autolink)
 *   [感謝](#acknowledgement)
 
-**Note:** 這份文件是用 Markdown 寫的，你可以 [看看他的原始檔][src] 。
+**Note:** 這份文件是用 Markdown 寫的，你可以 [看看它的原始檔][src] 。
 
   [src]: https://github.com/othree/markdown-syntax-zhtw/blob/master/syntax.md
 
