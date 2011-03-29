@@ -28,7 +28,7 @@ Markdown: Syntax
     *   [自動連結](#autolink)
 *   [感謝](#acknowledgement)
 
-**Note:** 這份文件是用 Markdown 寫的，你可以 [看看它的原始檔][src] 。
+**注意：**這份文件是用 Markdown 寫的，你可以[看看它的原始檔][src] 。
 
   [src]: https://github.com/othree/markdown-syntax-zhtw/blob/master/syntax.md
 
@@ -55,7 +55,7 @@ Markdown 的目標是實現「易讀易寫」。
 
 Markdown 的語法有個主要的目的：用來作為一種網路內容的*寫作*用語言。
 
-Markdown 不是要來取代 HTML，甚至也沒有要和它相似，它的語法種類不多，只和 HTML 的一部分有關係，重點 *不是* 要創造一種更容易寫作 HTML 文件的語法，我認為 HTML 已經很容易寫了，Markdown 的重點在於，它能讓文件更容易閱讀、編寫。HTML 是一種 *發佈* 的格式，Markdown 是一種 *編寫* 的格式，因此，Markdown 的格式語法只涵蓋純文字可以涵蓋的範圍。
+Markdown 不是要來取代 HTML，甚至也沒有要和它相似，它的語法種類不多，只和 HTML 的一部分有關係，重點*不是*要創造一種更容易寫作 HTML 文件的語法，我認為 HTML 已經很容易寫了，Markdown 的重點在於，它能讓文件更容易閱讀、編寫。HTML 是一種*發佈*的格式，Markdown 是一種*編寫*的格式，因此，Markdown 的格式語法只涵蓋純文字可以涵蓋的範圍。
 
 不在 Markdown 涵蓋範圍之外的標籤，都可以直接在文件裡面用 HTML 撰寫。不需要額外標註這是 HTML 或是 Markdown；只要直接加標籤就可以了。
 
@@ -73,7 +73,7 @@ Markdown 不是要來取代 HTML，甚至也沒有要和它相似，它的語法
 
     This is another regular paragraph.
 
-請注意，Markdown 語法在 HTML 區塊標籤中將不會被進行處理。例如，你無法在 HTML 區塊內使用 Markdown 形式的 `*強調*`。
+請注意，Markdown 語法在 HTML 區塊標籤中將不會被進行處理。例如，你無法在 HTML 區塊內使用 Markdown 形式的`*強調*`。
 
 HTML 的區段標籤如 `<span>`、`<cite>`、`<del>` 則不受限制，可以在 Markdown 的段落、清單或是標題裡任意使用。依照個人習慣，甚至可以不用Markdown 格式，而採用 HTML 標籤來格式化。舉例說明：如果比較喜歡 HTML 的  `<a>` 或 `<img>` 標籤，可以直接使用這些標籤，而不用 Markdown 提供的連結或是影像標示語法。
 
@@ -126,7 +126,7 @@ Markdown 將會把它轉換為：
 
 「一個以上相連接的行句組成」這句話其實暗示了 Markdown 允許段落內的強迫斷行，這個特性和其他大部分的 text-to-HTML 格式不一樣（包括 MovableType 的「Convert Line Breaks」選項），其它的格式會把每個斷行都轉成 `<br />` 標籤。
 
-如果你 *真的* 想要插入 `<br />` 標籤的話，在行尾加上兩個以上的空白，然後按 enter。
+如果你*真的*想要插入 `<br />` 標籤的話，在行尾加上兩個以上的空白，然後按 enter。
 
 是的，這確實需要花比較多功夫來插入 `<br />` ，但是「每個換行都轉換為 `<br />`」的方法在 Markdown 中並不適合， Markdown 中 email 式的 [區塊引言][bq] 和多段落的 [清單][l] 在使用換行來排版的時候，不但更好用，還更好閱讀。
 
@@ -203,7 +203,7 @@ Markdown 也允許你只在整個段落的第一行最前面加上 `>` ：
 	> 
 	>     return shell_exec("echo $input | $markdown_script");
 
-任何標準的文字編輯器都能簡單地建立 email 樣式的引言，例如 BBEdit ，你可以選取文字後然後從選單中選擇 *增加引言階層* 。
+任何標準的文字編輯器都能簡單地建立 email 樣式的引言，例如 BBEdit ，你可以選取文字後然後從選單中選擇*增加引言階層*。
 
 <h3 id="list">清單</h3>
 
@@ -330,7 +330,7 @@ Markdown 支援有序清單和無序清單。
         > This is a blockquote
         > inside a list item.
 
-如果要放程式碼區塊的話，該區塊就需要縮排 *兩次* ，也就是 8 個空白或是兩個 tab：
+如果要放程式碼區塊的話，該區塊就需要縮排*兩次* ，也就是 8 個空白或是兩個 tab：
 
     *   A list item with a code block:
 
@@ -341,7 +341,7 @@ Markdown 支援有序清單和無序清單。
 
     1986. What a great season.
 
-換句話說，也就是在行首出現 *數字-句點-空白* ，要避免這樣的狀況，你可以在句點前面加上反斜線。
+換句話說，也就是在行首出現*數字-句點-空白*，要避免這樣的狀況，你可以在句點前面加上反斜線。
 
     1986\. What a great season.
 
@@ -417,7 +417,7 @@ Markdown 會轉換成：
 
 <h3 id="link">連結</h3>
 
-Markdown 支援兩種形式的連結語法： *行內* 和 *參考* 兩種形式。
+Markdown 支援兩種形式的連結語法： *行內*和*參考*兩種形式。
 
 不管是哪一種，連結的文字都是用 [方括號] 來標記。
 
@@ -465,7 +465,7 @@ Markdown 支援兩種形式的連結語法： *行內* 和 *參考* 兩種形式
 	[foo]: http://example.com/  'Optional Title Here'
 	[foo]: http://example.com/  (Optional Title Here)
 
-**Note:** 有一個已知的問題是 Markdown.pl 1.0.1 會忽略單引號包起來的連結 title。
+**請注意：** 有一個已知的問題是 Markdown.pl 1.0.1 會忽略單引號包起來的連結 title。
 
 連結網址也可以用角括號包起來：
 
@@ -478,12 +478,12 @@ Markdown 支援兩種形式的連結語法： *行內* 和 *參考* 兩種形式
 
 網址定義只有在產生連結的時候用到，並不會直接出現在文件之中。
 
-連結辨識標籤可以有字母、數字、空白和標點符號，但是並 *不* 區分大小寫，因此下面兩個連結是一樣的：
+連結辨識標籤可以有字母、數字、空白和標點符號，但是並*不*區分大小寫，因此下面兩個連結是一樣的：
 
 	[link text][a]
 	[link text][A]
 
-*預設的連結標籤* 功能讓你可以省略指定連結標籤，這種情形下，連結標籤和連結文字會視為相同，要用預設連結標籤只要在連結文字後面加上一個空的角括號，如果你要讓 "Google" 連結到 google.com，你可以簡化成：
+*預設的連結標籤*功能讓你可以省略指定連結標籤，這種情形下，連結標籤和連結文字會視為相同，要用預設連結標籤只要在連結文字後面加上一個空的角括號，如果你要讓 "Google" 連結到 google.com，你可以簡化成：
 
 	[Google][]
 
@@ -538,7 +538,7 @@ Markdown 支援兩種形式的連結語法： *行內* 和 *參考* 兩種形式
 
 <h3 id="em">強調</h3>
 
-Markdown 使用星號 (`*`) 和底線 (`_`) 作為標記強調字詞的符號，被 `*` 或`_` 包圍的字詞會被轉成用 `<em>` 標籤包圍，用兩個 `*` 或 `_` 包起來的話，則會被轉成 `<strong>` ，例如：
+Markdown 使用星號（`*`）和底線（`_`）作為標記強調字詞的符號，被 `*` 或 `_` 包圍的字詞會被轉成用 `<em>` 標籤包圍，用兩個 `*` 或 `_` 包起來的話，則會被轉成 `<strong>`，例如：
 
     *single asterisks*
 
@@ -572,7 +572,7 @@ Markdown 使用星號 (`*`) 和底線 (`_`) 作為標記強調字詞的符號，
 
 <h3 id="code">程式碼</h3>
 
-如果要標記一小段行內程式碼，你可以用反引號把它包起來 (`` ` ``)，例如：
+如果要標記一小段行內程式碼，你可以用反引號把它包起來（`` ` ``），例如：
 
     Use the `printf()` function.
 
@@ -600,7 +600,7 @@ Markdown 使用星號 (`*`) 和底線 (`_`) 作為標記強調字詞的符號，
 	
 	<p>A backtick-delimited string in a code span: <code>`foo`</code></p>
 
-在程式碼區段內， `&` 和角括號都會被轉成 HTML 實體，這樣會比較容易插入 HTML 原始碼，Markdown 會把下面這段：
+在程式碼區段內，`&` 和角括號都會被轉成 HTML 實體，這樣會比較容易插入 HTML 原始碼，Markdown 會把下面這段：
 
     Please don't use any `<blink>` tags.
 
@@ -623,7 +623,7 @@ Markdown 使用星號 (`*`) 和底線 (`_`) 作為標記強調字詞的符號，
 
 很明顯地，要在純文字應用中設計一個 「自然」的語法來插入圖片是有一定難度的。
 
-Markdown 使用一種和連結很相似的語法來標記圖片，同樣也允許兩種樣式： *行內* 和 *參考* 。
+Markdown 使用一種和連結很相似的語法來標記圖片，同樣也允許兩種樣式： *行內*和*參考*。
 
 行內圖片的語法看起來像是：
 
@@ -642,7 +642,7 @@ Markdown 使用一種和連結很相似的語法來標記圖片，同樣也允�
 
     ![Alt text][id]
 
-"id" 是圖片參考的名稱，圖片參考的定義方式則和連結參考一樣：
+「id」是圖片參考的名稱，圖片參考的定義方式則和連結參考一樣：
 
     [id]: url/to/image  "Optional title attribute"
 
@@ -700,7 +700,7 @@ Markdown 支援在下面這些符號前面加上反斜線來幫助插入普通�
 
 <h2 id="acknowledgement">感謝</h2>
 
-感謝 [leafy7382][] 協助翻譯，[ethantw][] 的 [漢字標準格式・CSS Reset][]。
+感謝 [leafy7382][] 協助翻譯，[ethantw][] 的[漢字標準格式・CSS Reset][]。
 
 [leafy7382]:https://twitter.com/#!/leafy7382
 [ethantw]:https://twitter.com/#!/ethantw
