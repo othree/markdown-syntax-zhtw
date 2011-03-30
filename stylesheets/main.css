@@ -40,7 +40,7 @@ div.wikistyle{border:1px solid #e9e9e9;}
 .wikistyle pre::-webkit-scrollbar-thumb:vertical{height:25px;background-color:#ccc;-webkit-border-radius:4px;-webkit-box-shadow:0 1px 1px rgba(255,255,255,1);}
 .wikistyle pre::-webkit-scrollbar-thumb:horizontal{width:25px;background-color:#ccc;-webkit-border-radius:4px;}
 .wikistyle pre code{padding:0!important;font-size:12px!important;background-color:#eee!important;border:none!important;}
-.wikistyle code{font-size:12px!important;background-color:#f8f8ff!important;color:#444!important;padding:0 .2em!important;border:1px solid #dedede!important;}
+.wikistyle code{font-size:14px!important;background-color:#f8f8ff!important;color:#444!important;padding:0 .2em!important;border:1px solid #dedede!important;}
 .wikistyle a code,.wikistyle a:link code,.wikistyle a:visited code{color:#4183c4!important;}
 .wikistyle img{max-width:100%;}
 .wikistyle pre.console{margin:1em 0!important;font-size:12px!important;background-color:black!important;padding:.5em!important;line-height:1.5em!important;color:white!important;}
