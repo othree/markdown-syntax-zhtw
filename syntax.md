@@ -40,7 +40,7 @@ Markdown: Syntax
 
 Markdown 的目標是實現「易讀易寫」。
 
-不過最需要強調的便是它的可讀性。一份使用 Markdown 格式撰寫的文件應該可以直接以純文字發佈，並且看起來不會充斥著標籤與版面要求語法。Markdown 語法受到一些既有 text-to-HTML 格式的影響，包括 [Setext] [1]、[atx] [2]、[Textile] [3]、[reStructuredText] [4]、[Grutatext] [5] 和 [EtText] [6]，然而最大靈感來源其實是純文字的電子郵件格式。
+不過最需要強調的便是它的可讀性。一份使用 Markdown 格式撰寫的文件應該可以直接以純文字發佈，並且看起來不像是被許多的標籤或者是格式指令所構成。Markdown 語法受到一些既有 text-to-HTML 格式的影響，包括 [Setext] [1]、[atx] [2]、[Textile] [3]、[reStructuredText] [4]、[Grutatext] [5] 和 [EtText] [6]，然而最大靈感來源其實是純文字的電子郵件格式。
 
   [1]: http://docutils.sourceforge.net/mirror/setext.html
   [2]: http://www.aaronsw.com/2002/atx/
