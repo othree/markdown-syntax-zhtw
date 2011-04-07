@@ -14,8 +14,8 @@ div.wikistyle, #comments{
     margin: 0 auto;
 }
 
-div.wikistyle{background-color:#f8f8f8;padding:.7em;}
-div.wikistyle{border:1px solid #e9e9e9;}
+div.wikistyle, #comments{background-color:#f8f8f8;padding:.7em;}
+div.wikistyle, #comments{border:1px solid #e9e9e9;}
 
 .wikistyle h1,.wikistyle h2,.wikistyle h3,.wikistyle h4,.wikistyle h5,.wikistyle h6{border:0!important;}
 .wikistyle h1{font-size:170%!important;border-top:4px solid #aaa!important;padding-top:.5em!important;margin-top:1.5em!important;}
