@@ -9,7 +9,7 @@ html.hasFontSmoothing-true {
 body {
     padding: 1em;
 }
-div.wikistyle{
+div.wikistyle, #comments{
     width:760px;
     margin: 0 auto;
 }
