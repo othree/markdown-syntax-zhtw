@@ -13,7 +13,9 @@ div.wikistyle, #comments{
     width:760px;
     margin: 0 auto;
 }
-
+#comments {
+    margin-top: 1em;
+}
 div.wikistyle, #comments{background-color:#f8f8f8;padding:.7em;}
 div.wikistyle, #comments{border:1px solid #e9e9e9;}
 
