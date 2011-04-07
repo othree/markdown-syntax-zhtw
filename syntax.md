@@ -700,8 +700,10 @@ Markdown 支援在下面這些符號前面加上反斜線來幫助插入普通�
 
 <h2 id="acknowledgement">感謝</h2>
 
-感謝 [leafy7382][] 協助翻譯，[ethantw][] 的[漢字標準格式・CSS Reset][]。
+感謝 [leafy7382][] 協助翻譯，[hlb][]、[Randylien][] 幫忙潤稿，[ethantw][] 的[漢字標準格式・CSS Reset][]。
 
 [leafy7382]:https://twitter.com/#!/leafy7382
+[hlb]:http://iamhlb.com/
+[Randylien]:http://twitter.com/randylien
 [ethantw]:https://twitter.com/#!/ethantw
 [漢字標準格式・CSS Reset]:http://ethantw.net/projects/han/
