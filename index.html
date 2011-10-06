@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Markdown 語法說明</title>
-        <link rel="stylesheet" media="all" href="Han-the-CSS-Reset/han.min.css">
+        <link rel="stylesheet" media="all" href="Han/han.min.css">
         <link rel="stylesheet" media="all" href="stylesheets/main.css">
     </head>
     <body>
@@ -56,7 +56,7 @@ Document. Please refer to <a href="http://daringfireball.net/projects/markdown/s
 
 <p>Markdown 的目標是實現「易讀易寫」。</p>
 
-<p>不過最需要強調的便是它的可讀性。一份使用 Markdown 格式撰寫的文件應該可以直接以純文字發佈，並且看起來不像是被許多的標籤或者是格式指令所構成。Markdown 語法受到一些既有 text-to-HTML 格式的影響，包括 <a href="http://docutils.sourceforge.net/mirror/setext.html">Setext</a>、<a href="http://www.aaronsw.com/2002/atx/">atx</a>、<a href="http://textism.com/tools/textile/">Textile</a>、<a href="http://docutils.sourceforge.net/rst.html">reStructuredText</a>、<a href="http://www.triptico.com/software/grutatxt.html">Grutatext</a> 和 <a href="http://ettext.taint.org/doc/">EtText</a>，然而最大靈感來源其實是純文字的電子郵件格式。</p>
+<p>不過最需要強調的便是它的可讀性。一份使用 Markdown 格式撰寫的文件應該可以直接以純文字發佈，並且看起來不會像是由許多標籤或是格式指令所構成。Markdown 語法受到一些既有 text-to-HTML 格式的影響，包括 <a href="http://docutils.sourceforge.net/mirror/setext.html">Setext</a>、<a href="http://www.aaronsw.com/2002/atx/">atx</a>、<a href="http://textism.com/tools/textile/">Textile</a>、<a href="http://docutils.sourceforge.net/rst.html">reStructuredText</a>、<a href="http://www.triptico.com/software/grutatxt.html">Grutatext</a> 和 <a href="http://ettext.taint.org/doc/">EtText</a>，然而最大靈感來源其實是純文字的電子郵件格式。</p>
 
 <p>因此 Markdown 的語法全由標點符號所組成，並經過嚴謹慎選，是為了讓它們看起來就像所要表達的意思。像是在文字兩旁加上星號，看起來就像*強調*。Markdown 的清單看起來，嗯，就是清單。假如你有使用過電子郵件，區塊引言看起來就真的像是引用一段文字。</p>
 
@@ -130,7 +130,7 @@ This is another regular paragraph.
 <pre><code>4 &amp;lt; 5
 </code></pre>
 
-<p>不過需要注意的是，code 範圍內，不論是行內還是區塊， <code>&lt;</code> 和 <code>&amp;</code> 兩個符號都 <em>一定</em> 會被轉換成 HTML 實體，這項特性讓你可以很容易地用 Markdown 寫 HTML code （和 HTML 相對而言， HTML 語法中，你要把所有的 <code>&lt;</code> 和 <code>&amp;</code> 都轉換為 HTML 實體，才能在 HTML 文件裡面寫出 HTML code。）</p>
+<p>不過需要注意的是，code 範圍內，不論是行內還是區塊， <code>&lt;</code> 和 <code>&amp;</code> 兩個符號都<em>一定</em>會被轉換成 HTML 實體，這項特性讓你可以很容易地用 Markdown 寫 HTML code （和 HTML 相對而言， HTML 語法中，你要把所有的 <code>&lt;</code> 和 <code>&amp;</code> 都轉換為 HTML 實體，才能在 HTML 文件裡面寫出 HTML code。）</p>
 
 <hr />
 
@@ -365,7 +365,7 @@ sit amet, consectetuer adipiscing elit.
     &gt; inside a list item.
 </code></pre>
 
-<p>如果要放程式碼區塊的話，該區塊就需要縮排<em>兩次</em> ，也就是 8 個空白或是兩個 tab：</p>
+<p>如果要放程式碼區塊的話，該區塊就需要縮排<em>兩次</em>，也就是 8 個空白或是兩個 tab：</p>
 
 <pre><code>*   A list item with a code block:
 
@@ -504,7 +504,7 @@ title attribute.&lt;/p&gt;
 
 <ul>
 <li>方括號，裡面輸入連結的辨識用標籤</li>
-<li>接著一個分號</li>
+<li>接著一個冒號</li>
 <li>接著一個以上的空白或 tab</li>
 <li>接著連結的網址</li>
 <li>選擇性地接著 title 內容，可以用單引號、雙引號或是括弧包著</li>
@@ -517,9 +517,9 @@ title attribute.&lt;/p&gt;
 [foo]: http://example.com/  (Optional Title Here)
 </code></pre>
 
-<p><strong>請注意：</strong> 有一個已知的問題是 Markdown.pl 1.0.1 會忽略單引號包起來的連結 title。</p>
+<p><strong>請注意：</strong>有一個已知的問題是 Markdown.pl 1.0.1 會忽略單引號包起來的連結 title。</p>
 
-<p>連結網址也可以用角括號包起來：</p>
+<p>連結網址也可以用方括號包起來：</p>
 
 <pre><code>[id]: &lt;http://example.com/&gt;  "Optional Title Here"
 </code></pre>
@@ -538,7 +538,7 @@ title attribute.&lt;/p&gt;
 [link text][A]
 </code></pre>
 
-<p><em>預設的連結標籤</em>功能讓你可以省略指定連結標籤，這種情形下，連結標籤和連結文字會視為相同，要用預設連結標籤只要在連結文字後面加上一個空的角括號，如果你要讓 "Google" 連結到 google.com，你可以簡化成：</p>
+<p><em>預設的連結標籤</em>功能讓你可以省略指定連結標籤，這種情形下，連結標籤和連結文字會視為相同，要用預設連結標籤只要在連結文字後面加上一個空的方括號，如果你要讓 "Google" 連結到 google.com，你可以簡化成：</p>
 
 <pre><code>[Google][]
 </code></pre>
@@ -673,7 +673,7 @@ A backtick-delimited string in a code span: `` `foo` ``
 &lt;p&gt;A backtick-delimited string in a code span: &lt;code&gt;`foo`&lt;/code&gt;&lt;/p&gt;
 </code></pre>
 
-<p>在程式碼區段內，<code>&amp;</code> 和角括號都會被轉成 HTML 實體，這樣會比較容易插入 HTML 原始碼，Markdown 會把下面這段：</p>
+<p>在程式碼區段內，<code>&amp;</code> 和方括號都會被轉成 HTML 實體，這樣會比較容易插入 HTML 原始碼，Markdown 會把下面這段：</p>
 
 <pre><code>Please don't use any `&lt;blink&gt;` tags.
 </code></pre>
@@ -711,7 +711,7 @@ equivalent of &lt;code&gt;&amp;amp;mdash;&lt;/code&gt;.&lt;/p&gt;
 
 <ul>
 <li>一個驚嘆號 <code>!</code></li>
-<li>接著一個角括號，裡面放上圖片的替代文字</li>
+<li>接著一個方括號，裡面放上圖片的替代文字</li>
 <li>接著一個普通括號，裡面放上圖片的網址，最後還可以用引號包住並加上
 選擇性的 'title' 文字。</li>
 </ul>
@@ -734,7 +734,7 @@ equivalent of &lt;code&gt;&amp;amp;mdash;&lt;/code&gt;.&lt;/p&gt;
 
 <h3 id="autolink">自動連結</h3>
 
-<p>Markdown 支援比較簡短的自動連結形式來處理網址和電子郵件信箱，只要是用角括號包起來， Markdown 就會自動把它轉成連結，連結的文字就和連結位置一樣，例如：</p>
+<p>Markdown 支援比較簡短的自動連結形式來處理網址和電子郵件信箱，只要是用方括號包起來， Markdown 就會自動把它轉成連結，連結的文字就和連結位置一樣，例如：</p>
 
 <pre><code>&lt;http://example.com/&gt;
 </code></pre>
@@ -786,7 +786,7 @@ _   底線
 
 <h2 id="acknowledgement">感謝</h2>
 
-<p>感謝 <a href="https://twitter.com/#!/leafy7382">leafy7382</a> 協助翻譯，<a href="http://iamhlb.com/">hlb</a>、<a href="http://twitter.com/randylien">Randylien</a> 幫忙潤稿，<a href="https://twitter.com/#!/ethantw">ethantw</a> 的<a href="http://ethantw.net/projects/han/">漢字標準格式・CSS Reset</a>。</p>
+<p>感謝 <a href="https://twitter.com/#!/leafy7382">leafy7382</a> 協助翻譯，<a href="http://iamhlb.com/">hlb</a>、<a href="http://twitter.com/randylien">Randylien</a> 幫忙潤稿，<a href="https://twitter.com/#!/ethantw">ethantw</a> 的<a href="http://ethantw.net/projects/han/">漢字標準格式・CSS Reset</a>， <a href="http://kidwm.net/">WM</a> 回報文字錯誤。</p>
 
 
         </div>
@@ -826,7 +826,7 @@ _   底線
   })();
 
         </script>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-        <script src="Han-the-CSS-Reset/han.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js></script>
+        <script src="Han/han.min.js"></script>
     </body>
 </html>
