@@ -40,7 +40,7 @@ Markdown: Syntax
 
 Markdown 的目標是實現「易讀易寫」。
 
-不過最需要強調的便是它的可讀性。一份使用 Markdown 格式撰寫的文件應該可以直接以純文字發佈，並且看起來不像是被許多的標籤或者是格式指令所構成。Markdown 語法受到一些既有 text-to-HTML 格式的影響，包括 [Setext] [1]、[atx] [2]、[Textile] [3]、[reStructuredText] [4]、[Grutatext] [5] 和 [EtText] [6]，然而最大靈感來源其實是純文字的電子郵件格式。
+不過最需要強調的便是它的可讀性。一份使用 Markdown 格式撰寫的文件應該可以直接以純文字發佈，並且看起來不會像是由許多標籤或是格式指令所構成。Markdown 語法受到一些既有 text-to-HTML 格式的影響，包括 [Setext] [1]、[atx] [2]、[Textile] [3]、[reStructuredText] [4]、[Grutatext] [5] 和 [EtText] [6]，然而最大靈感來源其實是純文字的電子郵件格式。
 
   [1]: http://docutils.sourceforge.net/mirror/setext.html
   [2]: http://www.aaronsw.com/2002/atx/
@@ -113,7 +113,7 @@ Markdown 將會把它轉換為：
 
     4 &lt; 5
 
-不過需要注意的是，code 範圍內，不論是行內還是區塊， `<` 和 `&` 兩個符號都 *一定* 會被轉換成 HTML 實體，這項特性讓你可以很容易地用 Markdown 寫 HTML code （和 HTML 相對而言， HTML 語法中，你要把所有的 `<` 和 `&` 都轉換為 HTML 實體，才能在 HTML 文件裡面寫出 HTML code。）
+不過需要注意的是，code 範圍內，不論是行內還是區塊， `<` 和 `&` 兩個符號都*一定*會被轉換成 HTML 實體，這項特性讓你可以很容易地用 Markdown 寫 HTML code （和 HTML 相對而言， HTML 語法中，你要把所有的 `<` 和 `&` 都轉換為 HTML 實體，才能在 HTML 文件裡面寫出 HTML code。）
 
 * * *
 
@@ -330,7 +330,7 @@ Markdown 支援有序清單和無序清單。
         > This is a blockquote
         > inside a list item.
 
-如果要放程式碼區塊的話，該區塊就需要縮排*兩次* ，也就是 8 個空白或是兩個 tab：
+如果要放程式碼區塊的話，該區塊就需要縮排*兩次*，也就是 8 個空白或是兩個 tab：
 
     *   A list item with a code block:
 
@@ -454,7 +454,7 @@ Markdown 支援兩種形式的連結語法： *行內*和*參考*兩種形式。
 連結定義的形式為：
 
 *   方括號，裡面輸入連結的辨識用標籤
-*   接著一個分號
+*   接著一個冒號
 *   接著一個以上的空白或 tab
 *   接著連結的網址
 *   選擇性地接著 title 內容，可以用單引號、雙引號或是括弧包著
@@ -465,9 +465,9 @@ Markdown 支援兩種形式的連結語法： *行內*和*參考*兩種形式。
 	[foo]: http://example.com/  'Optional Title Here'
 	[foo]: http://example.com/  (Optional Title Here)
 
-**請注意：** 有一個已知的問題是 Markdown.pl 1.0.1 會忽略單引號包起來的連結 title。
+**請注意：**有一個已知的問題是 Markdown.pl 1.0.1 會忽略單引號包起來的連結 title。
 
-連結網址也可以用角括號包起來：
+連結網址也可以用方括號包起來：
 
     [id]: <http://example.com/>  "Optional Title Here"
 
@@ -483,7 +483,7 @@ Markdown 支援兩種形式的連結語法： *行內*和*參考*兩種形式。
 	[link text][a]
 	[link text][A]
 
-*預設的連結標籤*功能讓你可以省略指定連結標籤，這種情形下，連結標籤和連結文字會視為相同，要用預設連結標籤只要在連結文字後面加上一個空的角括號，如果你要讓 "Google" 連結到 google.com，你可以簡化成：
+*預設的連結標籤*功能讓你可以省略指定連結標籤，這種情形下，連結標籤和連結文字會視為相同，要用預設連結標籤只要在連結文字後面加上一個空的方括號，如果你要讓 "Google" 連結到 google.com，你可以簡化成：
 
 	[Google][]
 
@@ -600,7 +600,7 @@ Markdown 使用星號（`*`）和底線（`_`）作為標記強調字詞的符�
 	
 	<p>A backtick-delimited string in a code span: <code>`foo`</code></p>
 
-在程式碼區段內，`&` 和角括號都會被轉成 HTML 實體，這樣會比較容易插入 HTML 原始碼，Markdown 會把下面這段：
+在程式碼區段內，`&` 和方括號都會被轉成 HTML 實體，這樣會比較容易插入 HTML 原始碼，Markdown 會把下面這段：
 
     Please don't use any `<blink>` tags.
 
@@ -634,7 +634,7 @@ Markdown 使用一種和連結很相似的語法來標記圖片，同樣也允�
 詳細敘述如下：
 
 *   一個驚嘆號 `!`
-*   接著一個角括號，裡面放上圖片的替代文字
+*   接著一個方括號，裡面放上圖片的替代文字
 *   接著一個普通括號，裡面放上圖片的網址，最後還可以用引號包住並加上
     選擇性的 'title' 文字。
 
@@ -654,7 +654,7 @@ Markdown 使用一種和連結很相似的語法來標記圖片，同樣也允�
 
 <h3 id="autolink">自動連結</h3>
 
-Markdown 支援比較簡短的自動連結形式來處理網址和電子郵件信箱，只要是用角括號包起來， Markdown 就會自動把它轉成連結，連結的文字就和連結位置一樣，例如：
+Markdown 支援比較簡短的自動連結形式來處理網址和電子郵件信箱，只要是用方括號包起來， Markdown 就會自動把它轉成連結，連結的文字就和連結位置一樣，例如：
 
     <http://example.com/>
     
@@ -700,10 +700,11 @@ Markdown 支援在下面這些符號前面加上反斜線來幫助插入普通�
 
 <h2 id="acknowledgement">感謝</h2>
 
-感謝 [leafy7382][] 協助翻譯，[hlb][]、[Randylien][] 幫忙潤稿，[ethantw][] 的[漢字標準格式・CSS Reset][]。
+感謝 [leafy7382][] 協助翻譯，[hlb][]、[Randylien][] 幫忙潤稿，[ethantw][] 的[漢字標準格式・CSS Reset][]， [WM][] 回報文字錯誤。
 
 [leafy7382]:https://twitter.com/#!/leafy7382
 [hlb]:http://iamhlb.com/
 [Randylien]:http://twitter.com/randylien
 [ethantw]:https://twitter.com/#!/ethantw
 [漢字標準格式・CSS Reset]:http://ethantw.net/projects/han/
+[WM]:http://kidwm.net/
