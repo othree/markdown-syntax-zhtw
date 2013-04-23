@@ -75,7 +75,7 @@ Document. Please refer to <a href="http://daringfireball.net/projects/markdown/s
 
 <p>不在 Markdown 涵蓋範圍之外的標籤，都可以直接在文件裡面用 HTML 撰寫。不需要額外標註這是 HTML 或是 Markdown；只要直接加標籤就可以了。</p>
 
-<p>只有區塊元素──比如 <code>&lt;div&gt;</code>、<code>&lt;table&gt;</code>、<code>&lt;pre&gt;</code>、<code>&lt;p&gt;</code> 等標籤，必需在前後加上空白，以利與內容區隔。而且這些（元素）的開始與結尾標籤，不可以用 tab 或是空白來縮排。Markdown 的產生器有智慧型判斷，可以避免在區塊標籤前後加上沒有必要的 <code>&lt;p&gt;</code> 標籤。</p>
+<p>只有區塊元素──比如 <code>&lt;div&gt;</code>、<code>&lt;table&gt;</code>、<code>&lt;pre&gt;</code>、<code>&lt;p&gt;</code> 等標籤，必需在前後加上空行，以利與內容區隔。而且這些（元素）的開始與結尾標籤，不可以用 tab 或是空白來縮排。Markdown 的產生器有智慧型判斷，可以避免在區塊標籤前後加上沒有必要的 <code>&lt;p&gt;</code> 標籤。</p>
 
 <p>舉例來說，在 Markdown 文件裡加上一段 HTML 表格：</p>
 
@@ -100,7 +100,7 @@ This is another regular paragraph.
 
 <p>在 HTML 文件中，有兩個字元需要特殊處理： <code>&lt;</code> 和 <code>&amp;</code> 。 <code>&lt;</code> 符號用於起始標籤，<code>&amp;</code> 符號則用於標記 HTML 實體，如果你只是想要使用這些符號，你必須要使用實體的形式，像是 <code>&amp;lt;</code> 和 <code>&amp;amp;</code>。</p>
 
-<p><code>&amp;</code> 符號其實很讓寫作網路文件的人很困擾，如果你要打「AT&amp;T」 ，你必須要寫成「<code>AT&amp;amp;T</code>」 ，還得轉換網址內的 <code>&amp;</code> 符號，如果你要連結到：</p>
+<p><code>&amp;</code> 符號其實很讓寫作網路文件的人感到困擾，如果你要打「AT&amp;T」 ，你必須要寫成「<code>AT&amp;amp;T</code>」 ，還得轉換網址內的 <code>&amp;</code> 符號，如果你要連結到：</p>
 
 <pre><code>http://images.google.com/images?num=30&amp;q=larry+bird
 </code></pre>
@@ -632,7 +632,7 @@ __double underscores__
 
 <p>你可以隨便用你喜歡的樣式，唯一的限制是，你用什麼符號開啟標籤，就要用什麼符號結束。</p>
 
-<p>強調也可以直接差在文字中間：</p>
+<p>強調也可以直接插在文字中間：</p>
 
 <pre><code>un*frigging*believable
 </code></pre>
