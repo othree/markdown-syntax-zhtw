@@ -12,6 +12,8 @@ Logo
 
 ### 單純 Markdown 編輯器
 * OSX
+  * [Byword](http://bywordapp.com/)
+  * [iA Writer](http://www.iawriter.com/mac/)
   * [Mouapp](http://mouapp.com/)
   * [TEXTS](http://www.texts.io/)
 * Linux
@@ -19,6 +21,14 @@ Logo
 * Windows
   * [MarkdownPad](http://markdownpad.com/)
   * [TEXTS](http://www.texts.io/)
+* iOS
+  * [Byword](http://bywordapp.com/)
+  * [iA Writer for iPad](http://www.iawriter.com/ipad/)
+  * [iA Writer for iPhone](http://www.iawriter.com/iphone/)
+
+### 預覽
+* OSX
+  * [Marked](https://itunes.apple.com/us/app/marked/id448925439)
 
 ### 通用文字編輯器 
 * [Sublime Text](http://www.sublimetext.com/)
