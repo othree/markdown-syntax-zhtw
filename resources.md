@@ -1,7 +1,6 @@
-![Markdown](http://markdown.tw/images/208x128.png)
-
 Markdown 資源
 ==================
+![Markdown](http://markdown.tw/images/208x128.png)
 
 Logo
 ----
@@ -34,18 +33,15 @@ Logo
 
 擴充版 Markdown
 --------------
-
 * [GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown)
 * [kramdown](http://kramdown.rubyforge.org/quickref.html#headers)
 * [MultiMarkdown](http://fletcherpenney.net/multimarkdown/)
 * [Pandoc's markdown](http://johnmacfarlane.net/pandoc/README.html#pandocs-markdown)
   * [Pandoc’s Markdown 語法中文翻譯](http://pages.tzengyuxio.me/pandoc/) 
 * [PHP Markdown Extra](http://michelf.ca/projects/php-markdown/extra/)
-* 
 
 引擎
 ----
-
 * C
   * [Sundown](https://github.com/vmg/sundown) 
 * JavaScript
@@ -67,12 +63,11 @@ Blog 服務
 
 Blog 系統
 ---------
-
 * [WordPress](http://wordpress.org/)
 * [MOVABLETYPE](http://www.movabletype.org/)
 
 CSS
 ---
-
 * [Markdown css themes](http://jasonm23.github.io/markdown-css-themes/)
 * [Markdown.css](http://mrcoles.com/demo/markdown-css/)
+
