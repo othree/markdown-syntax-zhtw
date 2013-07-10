@@ -10,7 +10,7 @@ Logo
 編輯器
 -----
 
-### 單純 Markdown 編輯器
+### 寫作用編輯器
 * OSX
   * [Byword](http://bywordapp.com/)
   * [iA Writer](http://www.iawriter.com/mac/)
