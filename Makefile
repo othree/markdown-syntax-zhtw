@@ -12,3 +12,6 @@ content.html: syntax.md
 resources_content.html: resources.md
 	perl Markdown_1.0.1/Markdown.pl resources.md > resources_content.html
 
+clean:
+	rm index.html resources.html content.html resources_content.html
+
