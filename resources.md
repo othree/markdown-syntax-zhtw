@@ -73,6 +73,18 @@ CSS
 * [Markdown css themes](http://jasonm23.github.io/markdown-css-themes/)
 * [Markdown.css](http://mrcoles.com/demo/markdown-css/)
 
+其他工具
+--------
+* [Doxygen](http://www.stack.nl/~dimitri/doxygen/manual/markdown.html)
+
+標準
+----
+* [Markdown](http://daringfireball.net/projects/markdown/)
+* [The Future of Markdown](http://www.codinghorror.com/blog/2012/10/the-future-of-markdown.html)
+* [W3C Markdown Community Group](http://www.w3.org/community/markdown/)
+* [W3C Markdown Community Group wiki](http://www.w3.org/community/markdown/wiki/Main_Page)
+
+
 感謝
 ----
 
