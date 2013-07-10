@@ -1,3 +1,6 @@
+
+![Markdown](http://markdown.tw/images/208x128.png)
+
 **NOTE:** This is Traditional Chinese Edition Document of
 Markdown Syntax. If you are seeking for English Edition 
 Document. Please refer to [Markdown: Syntax][eng-doc].
