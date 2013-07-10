@@ -13,10 +13,12 @@ Logo
 ### 單純 Markdown 編輯器
 * OSX
   * [Mouapp](http://mouapp.com/)
+  * [TEXTS](http://www.texts.io/)
 * Linux
   * [ReText](http://sourceforge.net/p/retext/home/ReText/)
 * Windows
   * [MarkdownPad](http://markdownpad.com/)
+  * [TEXTS](http://www.texts.io/)
 
 ### 通用文字編輯器 
 * [Sublime Text](http://www.sublimetext.com/)
