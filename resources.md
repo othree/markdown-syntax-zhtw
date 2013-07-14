@@ -16,6 +16,7 @@ Logo
   * [iA Writer](http://www.iawriter.com/mac/)
   * [Mouapp](http://mouapp.com/)
   * [TEXTS](http://www.texts.io/)
+  * [Kobito](http://kobito.qiita.com/)
 * Linux
   * [ReText](http://sourceforge.net/p/retext/home/ReText/)
 * Windows
