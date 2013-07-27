@@ -44,6 +44,9 @@ Logo
 * [EpicEditor](http://oscargodson.github.io/EpicEditor/)
 * [Markgiu](https://github.com/bianchimro/markgiu)
 
+### 瀏覽器 Extension
+* [Markdown Here](https://github.com/adam-p/markdown-here/)
+
 擴充版 Markdown
 --------------
 * [GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown)
