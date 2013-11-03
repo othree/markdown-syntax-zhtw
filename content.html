@@ -1,8 +1,8 @@
-<h1>Markdown 文件</h1>
+<h1>Markdown文件</h1>
 
 <p><img src="http://markdown.tw/images/208x128.png" alt="Markdown" title="" /></p>
 
-<p><strong>NOTE:</strong> This is Traditional Chinese Edition Document of
+<p lang="en"><strong>NOTE:</strong> This is Traditional Chinese Edition Document of
 Markdown Syntax. If you are seeking for English Edition 
 Document. Please refer to <a href="http://daringfireball.net/projects/markdown/syntax">Markdown: Syntax</a>.</p>
 
@@ -12,7 +12,7 @@ Document. Please refer to <a href="http://daringfireball.net/projects/markdown/s
 <li><a href="#overview">概述</a>
 <ul>
 <li><a href="#philosophy">哲學</a></li>
-<li><a href="#html">行內 HTML</a></li>
+<li><a href="#html">行內HTML</a></li>
 <li><a href="#autoescape">特殊字元自動轉換</a></li>
 </ul></li>
 <li><a href="#block">區塊元素</a>
@@ -31,7 +31,7 @@ Document. Please refer to <a href="http://daringfireball.net/projects/markdown/s
 <li><a href="#code">程式碼</a></li>
 <li><a href="#img">圖片</a></li>
 </ul></li>
-<li><a href="#misc">其它</a>
+<li><a href="#misc">其他</a>
 <ul>
 <li><a href="#backslash">跳脫字元</a></li>
 <li><a href="#autolink">自動連結</a></li>
@@ -39,7 +39,7 @@ Document. Please refer to <a href="http://daringfireball.net/projects/markdown/s
 <li><a href="#acknowledgement">感謝</a></li>
 </ul>
 
-<p><strong>注意：</strong>這份文件是用 Markdown 寫的，你可以<a href="https://github.com/othree/markdown-syntax-zhtw/blob/master/syntax.md">看看它的原始檔</a> 。</p>
+<p><strong>注意：</strong>這份文件是用Markdown寫的，你可以<a href="https://github.com/othree/markdown-syntax-zhtw/blob/master/syntax.md">看看它的原始檔</a>。</p>
 
 <hr />
 
@@ -47,23 +47,23 @@ Document. Please refer to <a href="http://daringfireball.net/projects/markdown/s
 
 <h3 id="philosophy">哲學</h3>
 
-<p>Markdown 的目標是實現「易讀易寫」。</p>
+<p>Markdown的目標是實現「易讀易寫」。</p>
 
-<p>不過最需要強調的便是它的可讀性。一份使用 Markdown 格式撰寫的文件應該可以直接以純文字發佈，並且看起來不會像是由許多標籤或是格式指令所構成。Markdown 語法受到一些既有 text-to-HTML 格式的影響，包括 <a href="http://docutils.sourceforge.net/mirror/setext.html">Setext</a>、<a href="http://www.aaronsw.com/2002/atx/">atx</a>、<a href="http://textism.com/tools/textile/">Textile</a>、<a href="http://docutils.sourceforge.net/rst.html">reStructuredText</a>、<a href="http://www.triptico.com/software/grutatxt.html">Grutatext</a> 和 <a href="http://ettext.taint.org/doc/">EtText</a>，然而最大靈感來源其實是純文字的電子郵件格式。</p>
+<p>不過最需要強調的便是它的可讀性。一份使用Markdown格式撰寫的文件應該可以直接以純文字發佈，並且看起來不會像是由許多標籤或是格式指令所構成。Markdown語法受到一些既有text-to-HTML格式的影響，包括<a href="http://docutils.sourceforge.net/mirror/setext.html">Setext</a>、<a href="http://www.aaronsw.com/2002/atx/">atx</a>、<a href="http://textism.com/tools/textile/">Textile</a>、<a href="http://docutils.sourceforge.net/rst.html">reStructuredText</a>、<a href="http://www.triptico.com/software/grutatxt.html">Grutatext</a>和<a href="http://ettext.taint.org/doc/">EtText</a>，然而最大靈感來源其實是純文字的電子郵件格式。</p>
 
-<p>因此 Markdown 的語法全由標點符號所組成，並經過嚴謹慎選，是為了讓它們看起來就像所要表達的意思。像是在文字兩旁加上星號，看起來就像*強調*。Markdown 的清單看起來，嗯，就是清單。假如你有使用過電子郵件，區塊引言看起來就真的像是引用一段文字。</p>
+<p>因此Markdown的語法全由標點符號所組成，並經過嚴謹慎選，是為了讓它們看起來就像所要表達的意思。像是在文字兩旁加上星號，看起來就像*強調*。Markdown的清單看起來，嗯，就是清單。假如你有使用過電子郵件，區塊引言看起來就真的像是引用一段文字。</p>
 
-<h3 id="html">行內 HTML</h3>
+<h3 id="html">行內HTML</h3>
 
-<p>Markdown 的語法有個主要的目的：用來作為一種網路內容的<em>寫作</em>用語言。</p>
+<p>Markdown的語法有個主要的目的：用來作為一種網路內容的<em>寫作</em>用語言。</p>
 
-<p>Markdown 不是要來取代 HTML，甚至也沒有要和它相似，它的語法種類不多，只和 HTML 的一部分有關係，重點<em>不是</em>要創造一種更容易寫作 HTML 文件的語法，我認為 HTML 已經很容易寫了，Markdown 的重點在於，它能讓文件更容易閱讀、編寫。HTML 是一種<em>發佈</em>的格式，Markdown 是一種<em>編寫</em>的格式，因此，Markdown 的格式語法只涵蓋純文字可以涵蓋的範圍。</p>
+<p>Markdown不是要來取代HTML，甚至也沒有要和它相似，它的語法種類不多，只和HTML的一部分有關係，重點<em>不是</em>要創造一種更容易寫作 HTML文件的語法，我認為HTML已經很容易寫了，Markdown的重點在於，它能讓文件更容易閱讀、編寫。HTML是一種<em>發佈</em>的格式，Markdown是一種<em>編寫</em>的格式，因此，Markdown的格式語法只涵蓋純文字可以涵蓋的範圍。</p>
 
-<p>不在 Markdown 涵蓋範圍之外的標籤，都可以直接在文件裡面用 HTML 撰寫。不需要額外標註這是 HTML 或是 Markdown；只要直接加標籤就可以了。</p>
+<p>不在Markdown涵蓋範圍之外的標籤，都可以直接在文件裡面用HTML撰寫。不需要額外標註這是HTML或是Markdown——只要直接加標籤就可以了。</p>
 
-<p>只有區塊元素──比如 <code>&lt;div&gt;</code>、<code>&lt;table&gt;</code>、<code>&lt;pre&gt;</code>、<code>&lt;p&gt;</code> 等標籤，必需在前後加上空行，以利與內容區隔。而且這些（元素）的開始與結尾標籤，不可以用 tab 或是空白來縮排。Markdown 的產生器有智慧型判斷，可以避免在區塊標籤前後加上沒有必要的 <code>&lt;p&gt;</code> 標籤。</p>
+<p>只有區塊元素——比如<code>&lt;div&gt;</code>、<code>&lt;table&gt;</code>、<code>&lt;pre&gt;</code>、<code>&lt;p&gt;</code>等標籤——必需在前後加上空行，以利與內容區隔。而且這些元素的開始與結尾標籤，不可以用tab或是空白來縮排。Markdown的產生器有智慧型判斷，可以避免在區塊標籤前後加上沒有必要的<code>&lt;p&gt;</code>標籤。</p>
 
-<p>舉例來說，在 Markdown 文件裡加上一段 HTML 表格：</p>
+<p>舉例來說，在Markdown文件裡加上一段HTML表格：</p>
 
 <pre><code>This is a regular paragraph.
 
@@ -76,17 +76,17 @@ Document. Please refer to <a href="http://daringfireball.net/projects/markdown/s
 This is another regular paragraph.
 </code></pre>
 
-<p>請注意，Markdown 語法在 HTML 區塊標籤中將不會被進行處理。例如，你無法在 HTML 區塊內使用 Markdown 形式的<code>*強調*</code>。</p>
+<p>請注意，Markdown語法在HTML區塊標籤中將不會被進行處理。例如，你無法在HTML區塊內使用Markdown形式的<code>*強調*</code>。</p>
 
-<p>HTML 的區段標籤如 <code>&lt;span&gt;</code>、<code>&lt;cite&gt;</code>、<code>&lt;del&gt;</code> 則不受限制，可以在 Markdown 的段落、清單或是標題裡任意使用。依照個人習慣，甚至可以不用Markdown 格式，而採用 HTML 標籤來格式化。舉例說明：如果比較喜歡 HTML 的  <code>&lt;a&gt;</code> 或 <code>&lt;img&gt;</code> 標籤，可以直接使用這些標籤，而不用 Markdown 提供的連結或是影像標示語法。</p>
+<p>HTML的區段標籤如<code>&lt;span&gt;</code>、<code>&lt;cite&gt;</code>、<code>&lt;del&gt;</code>則不受限制，可以在Markdown的段落、清單或是標題裡任意使用。依照個人習慣，甚至可以不用Markdown格式，而採用HTML標籤來格式化。舉例說明：如果比較喜歡 HTML的<code>&lt;a&gt;</code>或<code>&lt;img&gt;</code>標籤，可以直接使用這些標籤，而不用Markdown提供的連結或是影像標示語法。</p>
 
-<p>HTML 區段標籤和區塊標籤不同，在區段標籤的範圍內， Markdown 的語法是有效的。</p>
+<p>HTML區段標籤和區塊標籤不同，在區段標籤的範圍內，Markdown的語法是有效的。</p>
 
 <h3 id="autoescape">特殊字元自動轉換</h3>
 
-<p>在 HTML 文件中，有兩個字元需要特殊處理： <code>&lt;</code> 和 <code>&amp;</code> 。 <code>&lt;</code> 符號用於起始標籤，<code>&amp;</code> 符號則用於標記 HTML 實體，如果你只是想要使用這些符號，你必須要使用實體的形式，像是 <code>&amp;lt;</code> 和 <code>&amp;amp;</code>。</p>
+<p>在HTML文件中，有兩個字元需要特殊處理：<code>&lt;</code>和<code>&amp;</code>。<code>&lt;</code>符號用於起始標籤，<code>&amp;</code>符號則用於標記HTML實體，如果你只是想要使用這些符號，你必須要使用實體的形式，像是<code>&amp;lt;</code>和<code>&amp;amp;</code>。</p>
 
-<p><code>&amp;</code> 符號其實很讓寫作網路文件的人感到困擾，如果你要打「AT&amp;T」 ，你必須要寫成「<code>AT&amp;amp;T</code>」 ，還得轉換網址內的 <code>&amp;</code> 符號，如果你要連結到：</p>
+<p><code>&amp;</code>符號其實很讓寫作網路文件的人感到困擾，如果你要打「AT&amp;T」，你必須要寫成「<code>AT&amp;amp;T</code>」，還得轉換網址內的<code>&amp;</code>符號，如果你要連結到：</p>
 
 <pre><code>http://images.google.com/images?num=30&amp;q=larry+bird
 </code></pre>
@@ -96,34 +96,34 @@ This is another regular paragraph.
 <pre><code>http://images.google.com/images?num=30&amp;amp;q=larry+bird
 </code></pre>
 
-<p>才能放到連結標籤的 <code>href</code> 屬性裡。不用說也知道這很容易忘記，這也可能是 HTML 標準檢查所檢查到的錯誤中，數量最多的。</p>
+<p>才能放到連結標籤的<code>href</code>屬性裡。不用說也知道這很容易忘記，這也可能是HTML標準檢查所檢查到的錯誤中，數量最多的。</p>
 
-<p>Markdown 允許你直接使用這些符號，但是你要小心跳脫字元的使用，如果你是在HTML 實體中使用 <code>&amp;</code> 符號的話，它不會被轉換，而在其它情形下，它則會被轉換成 <code>&amp;amp;</code>。所以你如果要在文件中插入一個著作權的符號，你可以這樣寫：</p>
+<p>Markdown允許你直接使用這些符號，但是你要小心跳脫字元的使用，如果你是在HTML實體中使用<code>&amp;</code>符號的話，它不會被轉換，而在其他情形下，它則會被轉換成<code>&amp;amp;</code>。所以你如果要在文件中插入一個著作權的符號，你可以這樣寫：</p>
 
 <pre><code>&amp;copy;
 </code></pre>
 
-<p>Markdown 將不會對這段文字做修改，但是如果你這樣寫：</p>
+<p>Markdown將不會對這段文字做修改，但是如果你這樣寫：</p>
 
 <pre><code>AT&amp;T
 </code></pre>
 
-<p>Markdown 就會將它轉為：</p>
+<p>Markdown就會將它轉為：</p>
 
 <pre><code>AT&amp;amp;T
 </code></pre>
 
-<p>類似的狀況也會發生在 <code>&lt;</code> 符號上，因為 Markdown 支援 <a href="#html">行內 HTML</a> ，如果你是使用 <code>&lt;</code> 符號作為 HTML 標籤使用，那 Markdown 也不會對它做任何轉換，但是如果你是寫：</p>
+<p>類似的狀況也會發生在<code>&lt;</code>符號上，因為Markdown支援<a href="#html">行內HTML</a>，如果你是使用<code>&lt;</code>符號作為HTML標籤使用，那Markdown也不會對它做任何轉換，但是如果你是寫：</p>
 
 <pre><code>4 &lt; 5
 </code></pre>
 
-<p>Markdown 將會把它轉換為：</p>
+<p>Markdown將會把它轉換為：</p>
 
 <pre><code>4 &amp;lt; 5
 </code></pre>
 
-<p>不過需要注意的是，code 範圍內，不論是行內還是區塊， <code>&lt;</code> 和 <code>&amp;</code> 兩個符號都<em>一定</em>會被轉換成 HTML 實體，這項特性讓你可以很容易地用 Markdown 寫 HTML code （和 HTML 相對而言， HTML 語法中，你要把所有的 <code>&lt;</code> 和 <code>&amp;</code> 都轉換為 HTML 實體，才能在 HTML 文件裡面寫出 HTML code。）</p>
+<p>不過需要注意的是，code範圍內，不論是行內還是區塊，<code>&lt;</code>和<code>&amp;</code>兩個符號都<em>一定</em>會被轉換成HTML實體，這項特性讓你可以很容易地用Markdown寫HTML code（和HTML相對而言， HTML語法中，你要把所有的<code>&lt;</code>和<code>&amp;</code>都轉換為HTML實體，才能在HTML文件裡面寫出HTML code。）</p>
 
 <hr />
 
@@ -131,19 +131,19 @@ This is another regular paragraph.
 
 <h3 id="p">段落和換行</h3>
 
-<p>一個段落是由一個以上相連接的行句組成，而一個以上的空行則會切分出不同的段落（空行的定義是顯示上看起來像是空行，便會被視為空行。比方說，若某一行只包含空白和 tab，則該行也會被視為空行），一般的段落不需要用空白或斷行縮排。</p>
+<p>一個段落是由一個以上相連接的行句組成，而一個以上的空行則會切分出不同的段落（空行的定義是顯示上看起來像是空行，便會被視為空行。比方說，若某一行只包含空白和tab，則該行也會被視為空行），一般的段落不需要用空白或斷行縮排。</p>
 
-<p>「一個以上相連接的行句組成」這句話其實暗示了 Markdown 允許段落內的強迫斷行，這個特性和其他大部分的 text-to-HTML 格式不一樣（包括 MovableType 的「Convert Line Breaks」選項），其它的格式會把每個斷行都轉成 <code>&lt;br /&gt;</code> 標籤。</p>
+<p>「一個以上相連接的行句組成」這句話其實暗示了Markdown允許段落內的強迫斷行，這個特性和其他大部分的text-to-HTML格式不一樣（包括 MovableType的「Convert Line Breaks」選項），其他的格式會把每個斷行都轉成<code>&lt;br /&gt;</code>標籤。</p>
 
-<p>如果你<em>真的</em>想要插入 <code>&lt;br /&gt;</code> 標籤的話，在行尾加上兩個以上的空白，然後按 enter。</p>
+<p>如果你<em>真的</em>想要插入<code>&lt;br /&gt;</code>標籤的話，在行尾加上兩個以上的空白，然後按enter。</p>
 
-<p>是的，這確實需要花比較多功夫來插入 <code>&lt;br /&gt;</code> ，但是「每個換行都轉換為 <code>&lt;br /&gt;</code>」的方法在 Markdown 中並不適合， Markdown 中 email 式的 <a href="#blockquote">區塊引言</a> 和多段落的 <a href="#list">清單</a> 在使用換行來排版的時候，不但更好用，還更好閱讀。</p>
+<p>是的，這確實需要花比較多功夫來插入<code>&lt;br /&gt;</code>，但是「每個換行都轉換為<code>&lt;br /&gt;</code>」的方法在 Markdown中並不適合，Markdown中email式的<a href="#blockquote">區塊引言</a>和多段落的<a href="#list">清單</a>在使用換行來排版的時候，不但更好用，還更好閱讀。</p>
 
 <h3 id="header">標題</h3>
 
-<p>Markdown 支援兩種標題的語法，<a href="http://docutils.sourceforge.net/mirror/setext.html">Setext</a> 和 <a href="http://www.aaronsw.com/2002/atx/">atx</a> 形式。</p>
+<p>Markdown支援兩種標題的語法，<a href="http://docutils.sourceforge.net/mirror/setext.html">Setext</a>和<a href="http://www.aaronsw.com/2002/atx/">atx</a>形式。</p>
 
-<p>Setext 形式是用底線的形式，利用 <code>=</code> （最高階標題）和 <code>-</code> （第二階標題），例如：</p>
+<p>Setext形式是用底線的形式，利用<code>=</code>（最高階標題）和<code>-</code>（第二階標題），例如：</p>
 
 <pre><code>This is an H1
 =============
@@ -152,9 +152,9 @@ This is an H2
 -------------
 </code></pre>
 
-<p>任何數量的 <code>=</code> 和 <code>-</code> 都可以有效果。</p>
+<p>任何數量的<code>=</code>和<code>-</code>都可以有效果。</p>
 
-<p>Atx 形式則是在行首插入 1 到 6 個 <code>#</code> ，對應到標題 1 到 6 階，例如：</p>
+<p>Atx形式則是在行首插入1至6個<code>#</code>，對應到標題1到6階，例如：</p>
 
 <pre><code># This is an H1
 
@@ -163,7 +163,7 @@ This is an H2
 ###### This is an H6
 </code></pre>
 
-<p>你可以選擇性地「關閉」atx 樣式的標題，這純粹只是美觀用的，若是覺得這樣看起來比較舒適，你就可以在行尾加上 <code>#</code>，而行尾的 <code>#</code> 數量也不用和開頭一樣（行首的井字數量決定標題的階數）：</p>
+<p>你可以選擇性地「關閉」atx樣式的標題，這純粹只是美觀用的，若是覺得這樣看起來比較舒適，你就可以在行尾加上<code>#</code>，而行尾的<code>#</code>數量也不用和開頭一樣（行首的井字數量決定標題的階數）：</p>
 
 <pre><code># This is an H1 #
 
@@ -174,7 +174,7 @@ This is an H2
 
 <h3 id="blockquote">Blockquotes</h3>
 
-<p>Markdown 使用 email 形式的區塊引言，如果你很熟悉如何在 email 信件中引言，你就知道怎麼在 Markdown 文件中建立一個區塊引言，那會看起來像是你強迫斷行，然後在每行的最前面加上 <code>&gt;</code> ：</p>
+<p>Markdown使用email形式的區塊引言，如果你很熟悉如何在email信件中引言，你就知道怎麼在Markdown文件中建立一個區塊引言，那會看起來像是你強迫斷行，然後在每行的最前面加上<code>&gt;</code>：</p>
 
 <pre><code>&gt; This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
 &gt; consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
@@ -184,7 +184,7 @@ This is an H2
 &gt; id sem consectetuer libero luctus adipiscing.
 </code></pre>
 
-<p>Markdown 也允許你只在整個段落的第一行最前面加上 <code>&gt;</code> ：</p>
+<p>Markdown也允許你只在整個段落的第一行最前面加上<code>&gt;</code>：</p>
 
 <pre><code>&gt; This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
 consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
@@ -194,7 +194,7 @@ Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
 id sem consectetuer libero luctus adipiscing.
 </code></pre>
 
-<p>區塊引言可以有階層（例如：引言內的引言），只要根據層數加上不同數量的 <code>&gt;</code> ：</p>
+<p>區塊引言可以有階層（例如：引言內的引言），只要根據層數加上不同數量的<code>&gt;</code>：</p>
 
 <pre><code>&gt; This is the first level of quoting.
 &gt;
@@ -203,7 +203,7 @@ id sem consectetuer libero luctus adipiscing.
 &gt; Back to the first level.
 </code></pre>
 
-<p>引言的區塊內也可以使用其他的 Markdown 語法，包括標題、清單、程式碼區塊等：</p>
+<p>引言的區塊內也可以使用其他的Markdown語法，包括標題、清單、程式碼區塊等：</p>
 
 <pre><code>&gt; ## This is a header.
 &gt; 
@@ -215,11 +215,11 @@ id sem consectetuer libero luctus adipiscing.
 &gt;     return shell_exec("echo $input | $markdown_script");
 </code></pre>
 
-<p>任何標準的文字編輯器都能簡單地建立 email 樣式的引言，例如 BBEdit ，你可以選取文字後然後從選單中選擇<em>增加引言階層</em>。</p>
+<p>任何標準的文字編輯器都能簡單地建立email樣式的引言，例如BBEdit，你可以選取文字後然後從選單中選擇<em>增加引言階層</em>。</p>
 
 <h3 id="list">清單</h3>
 
-<p>Markdown 支援有序清單和無序清單。</p>
+<p>Markdown支援有序清單和無序清單。</p>
 
 <p>無序清單使用星號、加號或是減號作為清單標記：</p>
 
@@ -249,7 +249,7 @@ id sem consectetuer libero luctus adipiscing.
 3.  Parish
 </code></pre>
 
-<p>很重要的一點是，你在清單標記上使用的數字並不會影響輸出的 HTML 結果，上面的清單所產生的 HTML 標記為：</p>
+<p>很重要的一點是，你在清單標記上使用的數字並不會影響輸出的HTML結果，上面的清單所產生的HTML標記為：</p>
 
 <pre><code>&lt;ol&gt;
 &lt;li&gt;Bird&lt;/li&gt;
@@ -272,11 +272,11 @@ id sem consectetuer libero luctus adipiscing.
 8. Parish
 </code></pre>
 
-<p>你都會得到完全相同的 HTML 輸出。重點在於，你可以讓 Markdown 文件的清單數字和輸出的結果相同，或是你懶一點，你可以完全不用在意數字的正確性。</p>
+<p>你都會得到完全相同的HTML輸出。重點在於，你可以讓Markdown文件的清單數字和輸出的結果相同，或是你懶一點，你可以完全不用在意數字的正確性。</p>
 
-<p>如果你使用懶惰的寫法，建議第一個項目最好還是從 1. 開始，因為 Markdown 未來可能會支援有序清單的 start 屬性。</p>
+<p>如果你使用懶惰的寫法，建議第一個項目最好還是從「1.」開始，因為Markdown未來可能會支援有序清單的start屬性。</p>
 
-<p>清單項目標記通常是放在最左邊，但是其實也可以縮排，最多三個空白，項目標記後面則一定要接著至少一個空白或 tab。</p>
+<p>清單項目標記通常是放在最左邊，但是其實也可以縮排，最多三個空白，項目標記後面則一定要接著至少一個空白或tab。</p>
 
 <p>要讓清單看起來更漂亮，你可以把內容用固定的縮排整理好：</p>
 
@@ -296,8 +296,7 @@ viverra nec, fringilla in, laoreet vitae, risus.
 Suspendisse id sem consectetuer libero luctus adipiscing.
 </code></pre>
 
-<p>如果清單項目間用空行分開， Markdown 會把項目的內容在輸出時用 <code>&lt;p&gt;</code> 
-標籤包起來，舉例來說：</p>
+<p>如果清單項目間用空行分開，Markdown會把項目的內容在輸出時用<code>&lt;p&gt;</code>標籤包起來，舉例來說：</p>
 
 <pre><code>*   Bird
 *   Magic
@@ -326,7 +325,7 @@ Suspendisse id sem consectetuer libero luctus adipiscing.
 &lt;/ul&gt;
 </code></pre>
 
-<p>清單項目可以包含多個段落，每個項目下的段落都必須縮排 4 個空白或是一個 tab ：</p>
+<p>清單項目可以包含多個段落，每個項目下的段落都必須縮排4個空白或是一個tab ：</p>
 
 <pre><code>1.  This is a list item with two paragraphs. Lorem ipsum dolor
     sit amet, consectetuer adipiscing elit. Aliquam hendrerit
@@ -339,7 +338,7 @@ Suspendisse id sem consectetuer libero luctus adipiscing.
 2.  Suspendisse id sem consectetuer libero luctus adipiscing.
 </code></pre>
 
-<p>如果你每行都有縮排，看起來會看好很多，當然，再次地，如果你很懶惰，Markdown 也允許：</p>
+<p>如果你每行都有縮排，看起來會看好很多，當然，再次地，如果你很懶惰，Markdown也允許：</p>
 
 <pre><code>*   This is a list item with two paragraphs.
 
@@ -350,7 +349,7 @@ sit amet, consectetuer adipiscing elit.
 *   Another item in the same list.
 </code></pre>
 
-<p>如果要在清單項目內放進引言，那 <code>&gt;</code> 就需要縮排：</p>
+<p>如果要在清單項目內放進引言，那<code>&gt;</code>就需要縮排：</p>
 
 <pre><code>*   A list item with a blockquote:
 
@@ -358,7 +357,7 @@ sit amet, consectetuer adipiscing elit.
     &gt; inside a list item.
 </code></pre>
 
-<p>如果要放程式碼區塊的話，該區塊就需要縮排<em>兩次</em>，也就是 8 個空白或是兩個 tab：</p>
+<p>如果要放程式碼區塊的話，該區塊就需要縮排<em>兩次</em>，也就是8個空白或是兩個tab：</p>
 
 <pre><code>*   A list item with a code block:
 
@@ -370,23 +369,23 @@ sit amet, consectetuer adipiscing elit.
 <pre><code>1986. What a great season.
 </code></pre>
 
-<p>換句話說，也就是在行首出現<em>數字-句點-空白</em>，要避免這樣的狀況，你可以在句點前面加上反斜線。</p>
+<p>換句話說，也就是在行首出現<em>數字－句點－空白</em>，要避免這樣的狀況，你可以在句點前面加上反斜線。</p>
 
 <pre><code>1986\. What a great season.
 </code></pre>
 
 <h3 id="precode">程式碼區塊</h3>
 
-<p>和程式相關的寫作或是標籤語言原始碼通常會有已經排版好的程式碼區塊，通常這些區塊我們並不希望它以一般段落文件的方式去排版，而是照原來的樣子顯示，Markdown 會用 <code>&lt;pre&gt;</code> 和 <code>&lt;code&gt;</code> 標籤來把程式碼區塊包起來。</p>
+<p>和程式相關的寫作或是標籤語言原始碼通常會有已經排版好的程式碼區塊，通常這些區塊我們並不希望它以一般段落文件的方式去排版，而是照原來的樣子顯示，Markdown會用<code>&lt;pre&gt;</code>和<code>&lt;code&gt;</code>標籤來把程式碼區塊包起來。</p>
 
-<p>要在 Markdown 中建立程式碼區塊很簡單，只要簡單地縮排 4 個空白或是 1 個 tab 就可以，例如，下面的輸入：</p>
+<p>要在Markdown中建立程式碼區塊很簡單，只要簡單地縮排4個空白或是1個tab就可以，例如，下面的輸入：</p>
 
 <pre><code>This is a normal paragraph:
 
     This is a code block.
 </code></pre>
 
-<p>Markdown 會轉換成：</p>
+<p>Markdown會轉換成：</p>
 
 <pre><code>&lt;p&gt;This is a normal paragraph:&lt;/p&gt;
 
@@ -394,7 +393,7 @@ sit amet, consectetuer adipiscing elit.
 &lt;/code&gt;&lt;/pre&gt;
 </code></pre>
 
-<p>這個每行一階的縮排（4 個空白或是 1 個 tab），都會被移除，例如：</p>
+<p>這個每行一階的縮排（4個空白或是tab），都會被移除，例如：</p>
 
 <pre><code>Here is an example of AppleScript:
 
@@ -415,7 +414,7 @@ end tell
 
 <p>一個程式碼區塊會一直持續到沒有縮排的那一行（或是文件結尾）。</p>
 
-<p>在程式碼區塊裡面， <code>&amp;</code> 、 <code>&lt;</code> 和 <code>&gt;</code> 會自動轉成 HTML 實體，這樣的方式讓你非常容易使用 Markdown 插入範例用的 HTML 原始碼，只需要複製貼上，再加上縮排就可以了，剩下的 Markdown 都會幫你處理，例如：</p>
+<p>在程式碼區塊裡面，<code>&amp;</code>、<code>&lt;</code>和<code>&gt;</code>會自動轉成HTML實體，這樣的方式讓你非常容易使用Markdown插入範例用的HTML原始碼，只需要複製貼上，再加上縮排就可以了，剩下的 Markdown都會幫你處理，例如：</p>
 
 <pre><code>    &lt;div class="footer"&gt;
         &amp;copy; 2004 Foo Corporation
@@ -430,7 +429,7 @@ end tell
 &lt;/code&gt;&lt;/pre&gt;
 </code></pre>
 
-<p>程式碼區塊中，一般的 Markdown 語法不會被轉換，像是星號便只是星號，這表示你可以很容易地以 Markdown 語法撰寫 Markdown 語法相關的文件。</p>
+<p>程式碼區塊中，一般的Markdown語法不會被轉換，像是星號便只是星號，這表示你可以很容易地以Markdown語法撰寫Markdown語法相關的文件。</p>
 
 <h3 id="hr">分隔線</h3>
 
@@ -453,11 +452,11 @@ end tell
 
 <h3 id="link">連結</h3>
 
-<p>Markdown 支援兩種形式的連結語法： <em>行內</em>和<em>參考</em>兩種形式。</p>
+<p>Markdown支援兩種形式的連結語法： <em>行內</em>和<em>參考</em>兩種形式。</p>
 
-<p>不管是哪一種，連結的文字都是用 [方括號] 來標記。</p>
+<p>不管是哪一種，連結的文字都是用<code>[方括號]</code>來標記。</p>
 
-<p>要建立一個行內形式的連結，只要在方塊括號後面馬上接著括號並插入網址連結即可，如果你還想要加上連結的 title 文字，只要在網址後面，用雙引號把 title 文字包起來即可，例如：</p>
+<p>要建立一個行內形式的連結，只要在方塊括號後面馬上接著括號並插入網址連結即可，如果你還想要加上連結的title文字，只要在網址後面，用雙引號把title文字包起來即可，例如：</p>
 
 <pre><code>This is [an example](http://example.com/ "Title") inline link.
 
@@ -510,14 +509,14 @@ title attribute.&lt;/p&gt;
 [foo]: http://example.com/  (Optional Title Here)
 </code></pre>
 
-<p><strong>請注意：</strong>有一個已知的問題是 Markdown.pl 1.0.1 會忽略單引號包起來的連結 title。</p>
+<p><strong>請注意：</strong>有一個已知的問題是Markdown.pl 1.0.1會忽略單引號包起來的連結title。</p>
 
 <p>連結網址也可以用方括號包起來：</p>
 
 <pre><code>[id]: &lt;http://example.com/&gt;  "Optional Title Here"
 </code></pre>
 
-<p>你也可以把 title 屬性放到下一行，也可以加一些縮排，網址太長的話，這樣會比較好看：</p>
+<p>你也可以把title屬性放到下一行，也可以加一些縮排，網址太長的話，這樣會比較好看：</p>
 
 <pre><code>[id]: http://example.com/longish/path/to/resource/here
     "Optional Title Here"
@@ -531,7 +530,7 @@ title attribute.&lt;/p&gt;
 [link text][A]
 </code></pre>
 
-<p><em>預設的連結標籤</em>功能讓你可以省略指定連結標籤，這種情形下，連結標籤和連結文字會視為相同，要用預設連結標籤只要在連結文字後面加上一個空的方括號，如果你要讓 "Google" 連結到 google.com，你可以簡化成：</p>
+<p><em>預設的連結標籤</em>功能讓你可以省略指定連結標籤，這種情形下，連結標籤和連結文字會視為相同，要用預設連結標籤只要在連結文字後面加上一個空的方括號，如果你要讓「Google」連結到google.com，你可以簡化成：</p>
 
 <pre><code>[Google][]
 </code></pre>
@@ -573,7 +572,7 @@ title attribute.&lt;/p&gt;
   [msn]:    http://search.msn.com/    "MSN Search"
 </code></pre>
 
-<p>上面兩種寫法都會產生下面的 HTML。</p>
+<p>上面兩種寫法都會產生下面的HTML。</p>
 
 <pre><code>&lt;p&gt;I get 10 times more traffic from &lt;a href="http://google.com/"
 title="Google"&gt;Google&lt;/a&gt; than from
@@ -581,20 +580,20 @@ title="Google"&gt;Google&lt;/a&gt; than from
 or &lt;a href="http://search.msn.com/" title="MSN Search"&gt;MSN&lt;/a&gt;.&lt;/p&gt;
 </code></pre>
 
-<p>下面是用行內形式寫的同樣一段內容的 Markdown 文件，提供作為比較之用：</p>
+<p>下面是用行內形式寫的同樣一段內容的Markdown文件，提供作為比較之用：</p>
 
 <pre><code>I get 10 times more traffic from [Google](http://google.com/ "Google")
 than from [Yahoo](http://search.yahoo.com/ "Yahoo Search") or
 [MSN](http://search.msn.com/ "MSN Search").
 </code></pre>
 
-<p>參考式的連結其實重點不在於它比較好寫，而是它比較好讀，比較一下上面的範例，使用參考式的文章本身只有 81 個字元，但是用行內形式的連結卻會增加到 176 個字元，如果是用純 HTML 格式來寫，會有 234 個字元，在 HTML 格式中，標籤比文字還要多。</p>
+<p>參考式的連結其實重點不在於它比較好寫，而是它比較好讀，比較一下上面的範例，使用參考式的文章本身只有 81 個字元，但是用行內形式的連結卻會增加到176個字元，如果是用純HTML格式來寫，會有234個字元，在HTML格式中，標籤比文字還要多。</p>
 
-<p>使用 Markdown 的參考式連結，可以讓文件更像是瀏覽器最後產生的結果，讓你可以把一些標記相關的資訊移到段落文字之外，你就可以增加連結而不讓文章的閱讀感覺被打斷。</p>
+<p>使用Markdown的參考式連結，可以讓文件更像是瀏覽器最後產生的結果，讓你可以把一些標記相關的資訊移到段落文字之外，你就可以增加連結而不讓文章的閱讀感覺被打斷。</p>
 
 <h3 id="em">強調</h3>
 
-<p>Markdown 使用星號（<code>*</code>）和底線（<code>_</code>）作為標記強調字詞的符號，被 <code>*</code> 或 <code>_</code> 包圍的字詞會被轉成用 <code>&lt;em&gt;</code> 標籤包圍，用兩個 <code>*</code> 或 <code>_</code> 包起來的話，則會被轉成 <code>&lt;strong&gt;</code>，例如：</p>
+<p>Markdown使用星號（<code>*</code>）和底線（<code>_</code>）作為標記強調字詞的符號，被<code>*</code>或<code>_</code>包圍的字詞會被轉成用<code>&lt;em&gt;</code>標籤包圍，用兩個<code>*</code>或<code>_</code>包起來的話，則會被轉成<code>&lt;strong&gt;</code>，例如：</p>
 
 <pre><code>*single asterisks*
 
@@ -623,7 +622,7 @@ __double underscores__
 <pre><code>un*frigging*believable
 </code></pre>
 
-<p>但是如果你的 <code>*</code> 和 <code>_</code> 兩邊都有空白的話，它們就只會被當成普通的符號。</p>
+<p>但是如果你的<code>*</code>和<code>_</code>兩邊都有空白的話，它們就只會被當成普通的符號。</p>
 
 <p>如果要在文字前後直接插入普通的星號或底線，你可以用反斜線：</p>
 
@@ -666,7 +665,7 @@ A backtick-delimited string in a code span: `` `foo` ``
 &lt;p&gt;A backtick-delimited string in a code span: &lt;code&gt;`foo`&lt;/code&gt;&lt;/p&gt;
 </code></pre>
 
-<p>在程式碼區段內，<code>&amp;</code> 和方括號都會被轉成 HTML 實體，這樣會比較容易插入 HTML 原始碼，Markdown 會把下面這段：</p>
+<p>在程式碼區段內，<code>&amp;</code>和方括號都會被轉成HTML實體，這樣會比較容易插入HTML原始碼，Markdown會把下面這段：</p>
 
 <pre><code>Please don't use any `&lt;blink&gt;` tags.
 </code></pre>
@@ -689,9 +688,9 @@ equivalent of &lt;code&gt;&amp;amp;mdash;&lt;/code&gt;.&lt;/p&gt;
 
 <h3 id="img">圖片</h3>
 
-<p>很明顯地，要在純文字應用中設計一個 「自然」的語法來插入圖片是有一定難度的。</p>
+<p>很明顯地，要在純文字應用中設計一個「自然」的語法來插入圖片是有一定難度的。</p>
 
-<p>Markdown 使用一種和連結很相似的語法來標記圖片，同樣也允許兩種樣式： <em>行內</em>和<em>參考</em>。</p>
+<p>Markdown使用一種和連結很相似的語法來標記圖片，同樣也允許兩種樣式： <em>行內</em>和<em>參考</em>。</p>
 
 <p>行內圖片的語法看起來像是：</p>
 
@@ -719,30 +718,30 @@ equivalent of &lt;code&gt;&amp;amp;mdash;&lt;/code&gt;.&lt;/p&gt;
 <pre><code>[id]: url/to/image  "Optional title attribute"
 </code></pre>
 
-<p>到目前為止， Markdown 還沒有辦法指定圖片的寬高，如果你需要的話，你可以使用普通的 <code>&lt;img&gt;</code> 標籤。</p>
+<p>到目前為止， Markdown還沒有辦法指定圖片的寬高，如果你需要的話，你可以使用普通的<code>&lt;img&gt;</code>標籤。</p>
 
 <hr />
 
-<h2 id="misc">其它</h2>
+<h2 id="misc">其他</h2>
 
 <h3 id="autolink">自動連結</h3>
 
-<p>Markdown 支援比較簡短的自動連結形式來處理網址和電子郵件信箱，只要是用方括號包起來， Markdown 就會自動把它轉成連結，連結的文字就和連結位置一樣，例如：</p>
+<p>Markdown支援比較簡短的自動連結形式來處理網址和電子郵件信箱，只要是用方括號包起來，Markdown就會自動把它轉成連結，連結的文字就和連結位置一樣，例如：</p>
 
 <pre><code>&lt;http://example.com/&gt;
 </code></pre>
 
-<p>Markdown 會轉為：</p>
+<p>Markdown會轉為：</p>
 
 <pre><code>&lt;a href="http://example.com/"&gt;http://example.com/&lt;/a&gt;
 </code></pre>
 
-<p>自動的郵件連結也很類似，只是 Markdown 會先做一個編碼轉換的過程，把文字字元轉成 16 進位碼的 HTML 實體，這樣的格式可以混淆一些不好的信箱地址收集機器人，例如：</p>
+<p>自動的郵件連結也很類似，只是Markdown會先做一個編碼轉換的過程，把文字字元轉成16進位碼的HTML實體，這樣的格式可以混淆一些不好的信箱地址收集機器人，例如：</p>
 
 <pre><code>&lt;address@example.com&gt;
 </code></pre>
 
-<p>Markdown 會轉成：</p>
+<p>Markdown會轉成：</p>
 
 <pre><code>&lt;a href="&amp;#x6D;&amp;#x61;i&amp;#x6C;&amp;#x74;&amp;#x6F;:&amp;#x61;&amp;#x64;&amp;#x64;&amp;#x72;&amp;#x65;
 &amp;#115;&amp;#115;&amp;#64;&amp;#101;&amp;#120;&amp;#x61;&amp;#109;&amp;#x70;&amp;#x6C;e&amp;#x2E;&amp;#99;&amp;#111;
@@ -756,12 +755,12 @@ equivalent of &lt;code&gt;&amp;amp;mdash;&lt;/code&gt;.&lt;/p&gt;
 
 <h3 id="backslash">跳脫字元</h3>
 
-<p>Markdown 可以利用反斜線來插入一些在語法中有其它意義的符號，例如：如果你想要用星號加在文字旁邊的方式來做出強調效果（但不用 <code>&lt;em&gt;</code> 標籤），你可以在星號的前面加上反斜線：</p>
+<p>Markdown可以利用反斜線來插入一些在語法中有其他意義的符號，例如：如果你想要用星號加在文字旁邊的方式來做出強調效果（但不用<code>&lt;em&gt;</code>標籤），你可以在星號的前面加上反斜線：</p>
 
 <pre><code>\*literal asterisks\*
 </code></pre>
 
-<p>Markdown 支援在下面這些符號前面加上反斜線來幫助插入普通的符號：</p>
+<p>Markdown支援在下面這些符號前面加上反斜線來幫助插入普通的符號：</p>
 
 <pre><code>\   反斜線
 `   反引號
@@ -779,4 +778,4 @@ _   底線
 
 <h2 id="acknowledgement">感謝</h2>
 
-<p>感謝 <a href="https://twitter.com/#!/leafy7382">leafy7382</a> 協助翻譯，<a href="http://iamhlb.com/">hlb</a>、<a href="http://twitter.com/randylien">Randylien</a> 幫忙潤稿，<a href="https://twitter.com/#!/ethantw">ethantw</a> 的<a href="http://ethantw.net/projects/han/">漢字標準格式・CSS Reset</a>， <a href="http://kidwm.net/">WM</a> 回報文字錯誤。</p>
+<p>感謝<a href="https://twitter.com/#!/leafy7382">leafy7382</a>協助翻譯，<a href="http://iamhlb.com/">hlb</a>、<a href="http://twitter.com/randylien">Randylien</a>幫忙潤稿，<a href="https://twitter.com/#!/ethantw">ethantw</a>的<a href="http://css.hanzi.co/">漢字標準格式</a>（Han.css），<a href="http://kidwm.net/">WM</a>回報文字錯誤。</p>
