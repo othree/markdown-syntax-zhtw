@@ -2,6 +2,11 @@ Markdown 資源
 ==================
 ![Markdown](http://markdown.tw/images/208x128.png)
 
+Spec
+----
+
+* [CommonMark](http://commonmark.org/)
+
 Logo
 ----
 
