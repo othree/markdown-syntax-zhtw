@@ -24,9 +24,11 @@ Logo
   * [Kobito](http://kobito.qiita.com/)
 * Linux
   * [ReText](http://sourceforge.net/p/retext/home/ReText/)
+  * [UberWriter](http://uberwriter.wolfvollprecht.de/)
 * Windows
   * [MarkdownPad](http://markdownpad.com/)
   * [TEXTS](http://www.texts.io/)
+  * [Miu](https://miu.0x142857.com)
 * iOS
   * [Byword](http://bywordapp.com/)
   * [iA Writer for iPad](http://www.iawriter.com/ipad/)
