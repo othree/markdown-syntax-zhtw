@@ -67,11 +67,13 @@ Logo
 ----
 * C
   * [Sundown](https://github.com/vmg/sundown) 
+  * [CommonMark](https://github.com/jgm/CommonMark)
 * JavaScript
   * [showdown](https://github.com/cky/wmd), not maintained any more
   * [pagedown](https://code.google.com/p/pagedown/), StackOverflow
   * [coreyti/showdown](https://github.com/coreyti/showdown)
   * [marked](https://github.com/chjj/marked)
+  * [CommonMark](https://github.com/jgm/CommonMark)
 * PHP
   * [PHP Markdown](http://michelf.ca/projects/php-markdown/)
 * Ruby
