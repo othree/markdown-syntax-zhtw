@@ -655,7 +655,7 @@ Markdown 使用一种和链接很相似的语法来标记图片，同样也允�
 
 <h2 id="misc">其它</h2>
 
-<h3 id="autolink">自动连结</h3>
+<h3 id="autolink">自动链接</h3>
 
 Markdown 支持比较简短的自动连结形式来处理网址和电子邮件信箱，只要是用方括号包起来， Markdown 就会自动把它转成链接，链接的文字就和链接位置一样，例如：
 
@@ -676,7 +676,7 @@ Markdown 会转成：
     &#109;">&#x61;&#x64;&#x64;&#x72;&#x65;&#115;&#115;&#64;&#101;&#120;&#x61;
     &#109;&#x70;&#x6C;e&#x2E;&#99;&#111;&#109;</a>
 
-在浏览器里面，这段字符串（其实是 `<a href="mailto:address@example.com">address@example.com</a>`）会变成一个可以点击的「address@example.com」连结。
+在浏览器里面，这段字符串（其实是 `<a href="mailto:address@example.com">address@example.com</a>`）会变成一个可以点击的「address@example.com」链接。
 
 （这种作法虽然可以糊弄不少的机器人，但并无法全部挡下来，不过这样也比什么都不做好些。无论如何，公开你的信箱终究会引来广告信件的。）
 
