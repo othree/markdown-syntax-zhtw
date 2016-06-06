@@ -43,7 +43,7 @@ Markdown: Syntax
 
 <h2 id="overview">概述</h2>
 
-<h3 id="philosophy">哲學</h3>
+### 哲學 
 
 Markdown 的目標是實現「易讀易寫」。
 
