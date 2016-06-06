@@ -1,4 +1,4 @@
-参考自 http://wowubuntu.com/markdown/
+
 
 Markdown 文件
 ==================
@@ -37,7 +37,7 @@ Markdown: Syntax
 
 **注意：**这份文件是用 Markdown 写的，你可以[看看它的原始档][src] 。
 
-  [src]: https://github.com/othree/markdown-syntax-zhtw/blob/master/syntax.md
+  [src]: https://github.com/osokay/markdown-syntax-zh/edit/master/syntax_zh.md
 
 * * *
 
@@ -704,6 +704,7 @@ Markdown 支持在下面这些符号前面加上反斜杠来帮助插入普通�
 <h2 id="acknowledgement">感谢</h2>
 
 感谢 [leafy7382][] 协助翻译，[hlb][]、[Randylien][] 帮忙润稿，[ethantw][] 的[汉字标准格式・CSS Reset][]， [WM][] 回报文字错误。
+因 gitcafe 被coding 收购, 原来[markdown中文][]翻译消失, 我们迁移到了github上
 
 [leafy7382]:https://twitter.com/#!/leafy7382
 [hlb]:http://iamhlb.com/
@@ -711,3 +712,4 @@ Markdown 支持在下面这些符号前面加上反斜杠来帮助插入普通�
 [ethantw]:https://twitter.com/#!/ethantw
 [汉字标准格式・CSS Reset]:http://ethantw.net/projects/han/
 [WM]:http://kidwm.net/
+[markdown中文]: http://wowubuntu.com/markdown/
