@@ -31,8 +31,8 @@ Markdown: Syntax
     *   [代码](#code)
     *   [图片](#img)
 *   [其它](#misc)
-    *   [反斜杠](#backslash)
     *   [自动链接](#autolink)
+    *   [反斜杠](#backslash)
 *   [感谢](#acknowledgement)
 
 **注意：**这份文件是用 Markdown 写的，你可以[看看它的原始档][src] 。
