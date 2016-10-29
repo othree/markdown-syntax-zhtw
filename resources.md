@@ -10,6 +10,10 @@
 
 * [The Markdown Mark](http://dcurt.is/the-markdown-mark)
 
+## 社群
+
+* [Facebook Markdown 台灣 Group](https://www.facebook.com/groups/830853873715381/)
+
 ## 編輯器
 
 ### 寫作用編輯器
