@@ -469,7 +469,7 @@ Markdown支援兩種形式的連結語法：*行內*和*參考*兩種形式。
 
 **請注意：**有一個已知的問題是Markdown.pl 1.0.1會忽略單引號包起來的連結title。
 
-連結網址也可以用方括號包起來：
+連結網址也可以用角括號包起來：
 
     [id]: <http://example.com/>  "Optional Title Here"
 
@@ -602,7 +602,7 @@ Markdown使用星號（`*`）和底線（`_`）作為標記強調字詞的符號
 	
 	<p>A backtick-delimited string in a code span: <code>`foo`</code></p>
 
-在程式碼區段內，`&`和方括號都會被轉成HTML實體，這樣會比較容易插入HTML原始碼，Markdown會把下面這段：
+在程式碼區段內，`&`和角括號都會被轉成HTML實體，這樣會比較容易插入HTML原始碼，Markdown會把下面這段：
 
     Please don't use any `<blink>` tags.
 
@@ -656,7 +656,7 @@ Markdown使用一種和連結很相似的語法來標記圖片，同樣也允許
 
 <h3 id="autolink">自動連結</h3>
 
-Markdown支援比較簡短的自動連結形式來處理網址和電子郵件信箱，只要是用方括號包起來，Markdown就會自動把它轉成連結，連結的文字就和連結位置一樣，例如：
+Markdown支援比較簡短的自動連結形式來處理網址和電子郵件信箱，只要是用角括號包起來，Markdown就會自動把它轉成連結，連結的文字就和連結位置一樣，例如：
 
     <http://example.com/>
     
