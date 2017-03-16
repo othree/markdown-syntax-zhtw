@@ -83,7 +83,7 @@
 * JavaScript
   * [commonmark.js](https://github.com/jgm/commonmark.js)
   * [showdown](https://github.com/cky/wmd), not maintained any more
-  * [pagedown](https://code.google.com/p/pagedown/), StackOverflow
+  * [pagedown](https://github.com/StackExchange/pagedown), StackOverflow
   * [coreyti/showdown](https://github.com/coreyti/showdown)
   * [marked](https://github.com/chjj/marked)
 * PHP
