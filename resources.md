@@ -68,6 +68,7 @@
 ## 擴充版 Markdown
 
 * [GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown)
+  * [Spec](https://github.github.com/gfm/)
 * [kramdown](http://kramdown.rubyforge.org/quickref.html#headers)
 * [MultiMarkdown](http://fletcherpenney.net/multimarkdown/)
 * [Pandoc's markdown](http://johnmacfarlane.net/pandoc/README.html#pandocs-markdown)
