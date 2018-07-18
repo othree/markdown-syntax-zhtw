@@ -74,6 +74,8 @@
 * [Pandoc's markdown](http://johnmacfarlane.net/pandoc/README.html#pandocs-markdown)
   * [Pandoc’s Markdown 語法中文翻譯](http://pages.tzengyuxio.me/pandoc/)
 * [PHP Markdown Extra](http://michelf.ca/projects/php-markdown/extra/)
+* [R Markdown](https://rmarkdown.rstudio.com/)
+* [Maruka](http://markua.com/)
 
 ## 引擎
 
@@ -101,6 +103,7 @@
 ## 其它用途引擎
 
 * [maildown](https://anydown.github.io/maildown/), 轉為日本常用商業郵件格式
+* [電電 Markdown](https://conv.denshochan.com/tw/markdown)，擴充語法，轉為電子書，非開源
 
 ## Blog 服務
 
