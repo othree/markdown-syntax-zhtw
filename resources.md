@@ -88,6 +88,7 @@
   * [pagedown](https://github.com/StackExchange/pagedown), StackOverflow
   * [coreyti/showdown](https://github.com/coreyti/showdown)
   * [marked](https://github.com/chjj/marked)
+  * [Remarkable](https://jonschlinkert.github.io/remarkable/demo/)
 * PHP
   * [PHP Markdown](http://michelf.ca/projects/php-markdown/)
 * Python
