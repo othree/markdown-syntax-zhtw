@@ -105,6 +105,9 @@
 
 * [maildown](https://anydown.github.io/maildown/), 轉為日本常用商業郵件格式
 * [電電 Markdown](https://conv.denshochan.com/tw/markdown)，擴充語法，轉為電子書，非開源
+* [mdx](https://github.com/mdx-js/mdx) Markdown in JSX
+* [mdx-deck](https://github.com/jxnblk/mdx-deck) MDX-based presentation decks
+* [mdxc](https://github.com/jamesknelson/mdxc) Convert markdown to React Component
 
 ## Blog 服務
 
