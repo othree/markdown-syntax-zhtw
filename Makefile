@@ -1,17 +1,9 @@
 all: index.html resources.html
+.PHONY: all
 
-index.html: header.html footer.html content.html
-	cat header.html content.html footer.html > index.html
+index.html: template.html syntax.md
+	cat template.html | perl -pe 's/\{\{\ *CONTENT\ *\}\}/`pandoc syntax.md`/ge' > index.html
 
-resources.html: header.html general_footer.html resources_content.html
-	cat header.html resources_content.html general_footer.html > resources.html
-
-content.html: syntax.md
-	perl Markdown_1.0.1/Markdown.pl syntax.md > content.html
-
-resources_content.html: resources.md
-	perl Markdown_1.0.1/Markdown.pl resources.md > resources_content.html
-
-clean:
-	rm index.html resources.html content.html resources_content.html
+resources.html: template.html resources.md
+	cat template.html | perl -pe 's/\{\{\ *CONTENT\ *\}\}/`pandoc resources.md`/ge' > resources.html
 
