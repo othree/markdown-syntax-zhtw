@@ -1,7 +1,7 @@
 Markdown文件
 ==================
 
-![Markdown](https://markdown.tw/images/208x128.png)
+![](https://markdown.tw/images/208x128.png)
 
 **NOTE:** This is Traditional Chinese Edition Document of
 Markdown Syntax. If you are seeking for English Edition 
