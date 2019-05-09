@@ -77,6 +77,8 @@
 * [PHP Markdown Extra](http://michelf.ca/projects/php-markdown/extra/)
 * [R Markdown](https://rmarkdown.rstudio.com/)
 * [Maruka](http://markua.com/)
+* [API Blueprint](https://apiblueprint.org/)
+* [MSON](https://apiblueprint.org/documentation/mson/tutorial.html)
 
 ## 引擎
 
