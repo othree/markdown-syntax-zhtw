@@ -65,7 +65,7 @@
 
 * [Markdown Here](https://github.com/adam-p/markdown-here/)
 
-## 擴充版 Markdown
+## 變形版 Markdown
 
 * [GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown)
     * [Spec](https://github.github.com/gfm/)
@@ -79,11 +79,13 @@
 * [Maruka](http://markua.com/)
 * [API Blueprint](https://apiblueprint.org/)
 * [MSON](https://apiblueprint.org/documentation/mson/tutorial.html)
+* [Reddit-flavored Markdown](https://www.reddit.com/wiki/markdown) parser not open
 
 ## 引擎
 
 * C
     * [cmark](https://github.com/jgm/cmark)
+    * [cmark-gfm](https://github.com/github/cmark-gfm)
     * [Sundown](https://github.com/vmg/sundown) 
 * JavaScript
     * [commonmark.js](https://github.com/jgm/commonmark.js)
@@ -99,6 +101,8 @@
 * Ruby
     * [Redcarpet](https://github.com/vmg/redcarpet) 
     * [Maruku](https://github.com/bhollis/maruku)
+* Rust
+    * [comark](https://github.com/kivikakk/comrak)
 
 ## 反向引擎
 
