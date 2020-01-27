@@ -103,6 +103,7 @@
     * [Maruku](https://github.com/bhollis/maruku)
 * Rust
     * [comark](https://github.com/kivikakk/comrak)
+    * [pulldown-cmark](https://github.com/raphlinus/pulldown-cmark)
 
 ## 反向引擎
 
