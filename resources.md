@@ -147,6 +147,10 @@
 * [W3C Markdown Community Group](http://www.w3.org/community/markdown/)
 * [W3C Markdown Community Group wiki](http://www.w3.org/community/markdown/wiki/Main_Page)
 
+## 文章
+
+* [Standard Flavored Markdown](https://blog.codinghorror.com/standard-flavored-markdown/) - 標準化緣起
+
 ## 感謝
 
 感謝 [WM](http://kidwm.net/) 協助整理
