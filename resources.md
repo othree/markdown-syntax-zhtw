@@ -69,6 +69,7 @@
 
 * [GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown)
     * [Spec](https://github.github.com/gfm/)
+    * [Source](https://github.com/github/cmark-gfm)
 * [GitLab Flavored Markdown](https://gitlab.com/help/user/markdown)
 * [kramdown](http://kramdown.rubyforge.org/quickref.html#headers)
 * [MultiMarkdown](http://fletcherpenney.net/multimarkdown/)
@@ -79,7 +80,8 @@
 * [Maruka](http://markua.com/)
 * [API Blueprint](https://apiblueprint.org/)
 * [MSON](https://apiblueprint.org/documentation/mson/tutorial.html)
-* [Reddit-flavored Markdown](https://www.reddit.com/wiki/markdown) parser not open
+* [Reddit-flavored Markdown](https://www.reddit.com/wiki/markdown)
+    * [Binding](https://github.com/zeantsoi/snoomark-binding)
 
 ## 引擎
 
